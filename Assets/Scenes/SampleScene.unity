@@ -2131,7 +2131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &2096480471
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2343,11 +2343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a3b1bab8dbf73438c24788c587c51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sunTransform: {fileID: 1403244456}
-  rotationSpeed: 50
-  orbitSpeed: 10
-  selfAxis: {x: 0, y: 1, z: 0}
-  orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!114 &2112679887
 MonoBehaviour:
   m_ObjectHideFlags: 0
