@@ -31,47 +31,36 @@ public class ChangePOV : MonoBehaviour
     private void OnValidate() {
         if (SunPOV) {
             ChangeToSunPOV();
-            SunPOV = false;
         }
         else if (MercuryPOV) {
             ChangeToMercuryPOV();
-            MercuryPOV = false;
         }
         else if (VenusPOV) {
             ChangeToVenusPOV();
-            VenusPOV = false;
         }
         else if (EarthPOV) {
             ChangeToEarthPOV();
-            EarthPOV = false;
         }
         else if (MoonPOV) {
             ChangeToMoonPOV();
-            MoonPOV = false;
         }
         else if (MarsPOV) {
             ChangeToMarsPOV();
-            MarsPOV = false;
         }
         else if (JupiterPOV) {
             ChangeToJupiterPOV();
-            JupiterPOV = false;
         }
         else if (SaturnPOV) {
             ChangeToSaturnPOV();
-            SaturnPOV = false;
         }
         else if (UranusPOV) {
             ChangeToUranusPOV();
-            UranusPOV = false;
         }
         else if (NeptunePOV) {
             ChangeToNeptunePOV();
-            NeptunePOV = false;
         }
         else if (OriginalCamera) {
             ChangeToOriginalPOV();
-            OriginalCamera = false;
         }
     }
 
@@ -82,66 +71,77 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToSunPOV() {
         currentPOV = "Sun";
         HUBScript.Instance.RotateWhenFollowing();
+        SunPOV = false;
     }
 
     [ContextMenu("Change to Mercury POV")]
     public void ChangeToMercuryPOV() {
         currentPOV = "Mercury";
         HUBScript.Instance.RotateWhenFollowing();
+        MercuryPOV = false;
     }
 
     [ContextMenu("Change to Venus POV")]
     public void ChangeToVenusPOV() {
         currentPOV = "Venus";
         HUBScript.Instance.RotateWhenFollowing();
+        VenusPOV = false;
     }
 
     [ContextMenu("Change to Earth POV")]
     public void ChangeToEarthPOV() {
         currentPOV = "Earth";
         HUBScript.Instance.RotateWhenFollowing();
+        EarthPOV = false;
     }
 
     [ContextMenu("Change to Moon POV")]
     public void ChangeToMoonPOV() {
         currentPOV = "Moon";
         HUBScript.Instance.RotateWhenFollowing();
+        MoonPOV = false;
     }
 
     [ContextMenu("Change to Mars POV")]
     public void ChangeToMarsPOV() {
         currentPOV = "Mars";
         HUBScript.Instance.RotateWhenFollowing();
+        MarsPOV = false;
     }
 
     [ContextMenu("Change to Jupiter POV")]
     public void ChangeToJupiterPOV() {
         currentPOV = "Jupiter";
         HUBScript.Instance.RotateWhenFollowing();
+        JupiterPOV = false;
     }
 
     [ContextMenu("Change to Saturn POV")]
     public void ChangeToSaturnPOV() {
         currentPOV = "Saturn";
         HUBScript.Instance.RotateWhenFollowing();
+        SaturnPOV = false;
     }
 
     [ContextMenu("Change to Uranus POV")]
     public void ChangeToUranusPOV() {
         currentPOV = "Uranus";
         HUBScript.Instance.RotateWhenFollowing();
+        UranusPOV = false;
     }
 
     [ContextMenu("Change to Neptune POV")]
     public void ChangeToNeptunePOV() {
         currentPOV = "Neptune";
         HUBScript.Instance.RotateWhenFollowing();
+        NeptunePOV = false;
     }
 
     [ContextMenu("Change to Original POV")]
     public void ChangeToOriginalPOV() {
         currentPOV = "Origin";
         HUBScript.Instance.RotateWhenNotFollowing();
+        OriginalCamera = false;
     }
 
     private void LateUpdate() {

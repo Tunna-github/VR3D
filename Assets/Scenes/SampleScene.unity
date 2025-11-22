@@ -541,52 +541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &100637770
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 100637772}
-  - component: {fileID: 100637771}
-  m_Layer: 0
-  m_Name: EarthCameraScript
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &100637771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100637770}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e259ebd696c29843b15f7ce357d595c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  earthPosition: {fileID: 2112679885}
-  earthCameraPosition: {fileID: 824461682}
---- !u!4 &100637772
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100637770}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18, y: 100, z: -98.60797}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112268171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,7 +1536,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 323619341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToMercuryPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &323619341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2501,7 +2467,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 541846419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToSaturnPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &541846419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3383,7 +3361,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 931383632}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToUranusPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &931383632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3504,7 +3494,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 987710697}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToNeptunePOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &987710697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5110,7 +5112,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1347561024}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToSunPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1347561024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5491,7 +5505,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1403610277}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341044}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1403610277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6028,7 +6054,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1535391058}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToMoonPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1535391058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7014,7 +7052,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1740191134}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToEarthPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1740191134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7271,7 +7321,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1799189598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToVenusPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1799189598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7935,7 +7997,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1909801824}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToMarsPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1909801824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8225,7 +8299,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1978466398}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToJupiterPOV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1978466398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8787,11 +8873,10 @@ SceneRoots:
   - {fileID: 417700722}
   - {fileID: 2096480474}
   - {fileID: 1091255161}
+  - {fileID: 409024018}
+  - {fileID: 394031425}
   - {fileID: 207147542}
   - {fileID: 1230568864}
-  - {fileID: 409024018}
-  - {fileID: 100637772}
   - {fileID: 188341046}
   - {fileID: 1210172396}
   - {fileID: 1043935912}
-  - {fileID: 394031425}
