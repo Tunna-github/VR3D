@@ -92,36 +92,47 @@ public class ChangePOV : MonoBehaviour
         switch (currentPOV) {
             case "Sun":
                 xrOrigin.position = sunCamera.position;
+                xrOrigin.rotation = sunCamera.rotation;
                 break;
             case "Mercury":
                 xrOrigin.position = mercuryCamera.position;
+                xrOrigin.rotation = mercuryCamera.rotation;
                 break;
             case "Venus":
                 xrOrigin.position = venusCamera.position;
+                xrOrigin.rotation = venusCamera.rotation;
                 break;
             case "Earth":
                 xrOrigin.position = earthCamera.position;
+                xrOrigin.rotation = earthCamera.rotation;
                 break;
             case "Moon":
                 xrOrigin.position = moonCamera.position;
+                xrOrigin.rotation = moonCamera.rotation;
                 break;
             case "Mars":
                 xrOrigin.position = marsCamera.position;
+                xrOrigin.rotation = marsCamera.rotation;
                 break;
             case "Jupiter":
                 xrOrigin.position = jupiterCamera.position;
+                xrOrigin.rotation = jupiterCamera.rotation;
                 break;
             case "Saturn":
                 xrOrigin.position = saturnCamera.position;
+                xrOrigin.rotation = saturnCamera.rotation;
                 break;
             case "Uranus":
                 xrOrigin.position = uranusCamera.position;
+                xrOrigin.rotation = uranusCamera.rotation;
                 break;
             case "Neptune":
                 xrOrigin.position = neptuneCamera.position;
+                xrOrigin.rotation = neptuneCamera.rotation;
                 break;
             case "Origin":
                 xrOrigin.position = originalCamera.position;
+                xrOrigin.rotation = originalCamera.rotation;
                 break;
             default:
                 Debug.Log("Something went wrong!");
