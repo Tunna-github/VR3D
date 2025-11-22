@@ -1,0 +1,164 @@
+{
+  "quiz": [
+    {
+      "question": "Hệ Mặt Trời có bao nhiêu hành tinh chính?",
+      "answerA": "5",
+      "answerB": "7",
+      "answerC": "8",
+      "answerD": "9",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Hành tinh nào lớn nhất trong Hệ Mặt Trời?",
+      "answerA": "Trái Đất",
+      "answerB": "Sao Mộc",
+      "answerC": "Sao Kim",
+      "answerD": "Sao Hải Vương",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Mặt Trời thuộc loại thiên thể nào?",
+      "answerA": "Hành tinh",
+      "answerB": "Ngôi sao",
+      "answerC": "Vệ tinh",
+      "answerD": "Tiểu hành tinh",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Hành tinh nào gần Mặt Trời nhất?",
+      "answerA": "Sao Kim",
+      "answerB": "Sao Thủy",
+      "answerC": "Trái Đất",
+      "answerD": "Sao Hỏa",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Hành tinh nào được gọi là “Hành tinh Đỏ”?",
+      "answerA": "Sao Hỏa",
+      "answerB": "Sao Mộc",
+      "answerC": "Sao Thổ",
+      "answerD": "Sao Kim",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Nhật thực xảy ra khi:",
+      "answerA": "Trái Đất nằm giữa Mặt Trời và Mặt Trăng",
+      "answerB": "Mặt Trăng nằm giữa Mặt Trời và Trái Đất",
+      "answerC": "Mặt Trời nằm giữa Trái Đất và Mặt Trăng",
+      "answerD": "Mặt Trăng bị Trái Đất che",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Trong nhật thực toàn phần, phần nào của Mặt Trăng che khuất hoàn toàn Mặt Trời?",
+      "answerA": "Bán bóng",
+      "answerB": "Toàn bóng",
+      "answerC": "Quỹ đạo",
+      "answerD": "Cực bắc",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Trên Trái Đất, không phải lúc nào cũng có nhật thực vì:",
+      "answerA": "Mặt Trăng quá nhỏ",
+      "answerB": "Quỹ đạo Mặt Trăng nghiêng so với quỹ đạo Trái Đất",
+      "answerC": "Mặt Trời quá xa",
+      "answerD": "Trái Đất quay quá nhanh",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Nhật thực chỉ xảy ra vào thời điểm nào?",
+      "answerA": "Trăng tròn",
+      "answerB": "Trăng non",
+      "answerC": "Trăng khuyết",
+      "answerD": "Trăng bán nguyệt",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Khi quan sát nhật thực, ta cần:",
+      "answerA": "Nhìn bằng mắt thường",
+      "answerB": "Dùng kính chuyên dụng",
+      "answerC": "Dùng ống nhòm thường",
+      "answerD": "Không cần bảo vệ mắt",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Nguyệt thực xảy ra khi:",
+      "answerA": "Mặt Trăng nằm giữa Mặt Trời và Trái Đất",
+      "answerB": "Trái Đất nằm giữa Mặt Trời và Mặt Trăng",
+      "answerC": "Mặt Trời nằm giữa Trái Đất và Mặt Trăng",
+      "answerD": "Mặt Trăng quá gần Trái Đất",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Nguyệt thực chỉ xảy ra vào thời điểm nào?",
+      "answerA": "Trăng non",
+      "answerB": "Trăng tròn",
+      "answerC": "Trăng khuyết",
+      "answerD": "Trăng lưỡi liềm",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Vì sao Mặt Trăng có màu đỏ trong nguyệt thực toàn phần?",
+      "answerA": "Vì nóng lên",
+      "answerB": "Vì bị Mặt Trời chiếu trực tiếp",
+      "answerC": "Vì ánh sáng Mặt Trời bị khúc xạ qua khí quyển Trái Đất",
+      "answerD": "Vì Mặt Trăng phát sáng",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Nguyệt thực khác nhật thực ở điểm nào?",
+      "answerA": "Nguyệt thực xảy ra ban ngày",
+      "answerB": "Nguyệt thực an toàn để quan sát bằng mắt thường",
+      "answerC": "Nguyệt thực xảy ra mỗi tháng",
+      "answerD": "Nguyệt thực luôn kéo dài ngắn hơn nhật thực",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Trong nguyệt thực một phần, Mặt Trăng:",
+      "answerA": "Bị che hoàn toàn",
+      "answerB": "Không bị che",
+      "answerC": "Chỉ một phần rơi vào bóng Trái Đất",
+      "answerD": "Biến mất hoàn toàn",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Trái Đất quay quanh trục của nó trong bao lâu?",
+      "answerA": "12 giờ",
+      "answerB": "24 giờ",
+      "answerC": "48 giờ",
+      "answerD": "7 ngày",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Trái Đất quay quanh Mặt Trời mất khoảng:",
+      "answerA": "1 tháng",
+      "answerB": "6 tháng",
+      "answerC": "1 năm",
+      "answerD": "2 năm",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Lớp khí bao quanh Trái Đất được gọi là:",
+      "answerA": "Thủy quyển",
+      "answerB": "Địa quyển",
+      "answerC": "Khí quyển",
+      "answerD": "Sinh quyển",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Lý do Trái Đất có bốn mùa là:",
+      "answerA": "Trái Đất quay rất nhanh",
+      "answerB": "Trái Đất nghiêng trên trục khi quay quanh Mặt Trời",
+      "answerC": "Trái Đất xa Mặt Trời hơn",
+      "answerD": "Mặt Trăng kéo Trái Đất",
+      "correctAnswer": ""
+    },
+    {
+      "question": "Trái Đất thuộc loại hành tinh:",
+      "answerA": "Khí khổng lồ",
+      "answerB": "Đá – rắn",
+      "answerC": "Lạnh băng",
+      "answerD": "Lửa nóng",
+      "correctAnswer": ""
+    }
+  ]
+}
