@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 76058701}
   - component: {fileID: 76058700}
   - component: {fileID: 76058699}
+  - component: {fileID: 76058702}
   m_Layer: 0
   m_Name: Jupiter Camera
   m_TagString: Planet Camera
@@ -256,6 +257,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &76058702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76058697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &100637770
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606629454c238bc4cb3fcde65b53dbc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sunCamera: {fileID: 1385868535}
   mercuryCamera: {fileID: 801564412}
   venusCamera: {fileID: 1866516281}
   earthCamera: {fileID: 824461682}
@@ -466,6 +480,7 @@ MonoBehaviour:
   saturnCamera: {fileID: 76058698}
   uranusCamera: {fileID: 1636190853}
   neptuneCamera: {fileID: 256341465}
+  originalCamera: {fileID: 1043935912}
   xrOrigin: {fileID: 536829100}
 --- !u!4 &188341046
 Transform:
@@ -666,6 +681,7 @@ GameObject:
   - component: {fileID: 256341468}
   - component: {fileID: 256341467}
   - component: {fileID: 256341466}
+  - component: {fileID: 256341469}
   m_Layer: 0
   m_Name: Neptune Camera
   m_TagString: Planet Camera
@@ -791,6 +807,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &256341469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256341464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &286825458
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,8 +957,9 @@ GameObject:
   - component: {fileID: 365493603}
   - component: {fileID: 365493602}
   - component: {fileID: 365493601}
+  - component: {fileID: 365493604}
   m_Layer: 0
-  m_Name: Saturns Camera
+  m_Name: Saturn Camera
   m_TagString: Planet Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1054,6 +1083,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &365493604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365493599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &409024017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,6 +1743,7 @@ GameObject:
   - component: {fileID: 801564415}
   - component: {fileID: 801564414}
   - component: {fileID: 801564413}
+  - component: {fileID: 801564416}
   m_Layer: 0
   m_Name: Mercury Camera
   m_TagString: Planet Camera
@@ -1827,6 +1869,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &801564416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801564411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &819322037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,6 +1893,7 @@ GameObject:
   - component: {fileID: 819322041}
   - component: {fileID: 819322040}
   - component: {fileID: 819322039}
+  - component: {fileID: 819322042}
   m_Layer: 0
   m_Name: Mars Camera
   m_TagString: Planet Camera
@@ -1964,6 +2019,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &819322042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819322037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &824461681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,7 +2243,7 @@ GameObject:
   - component: {fileID: 1043935910}
   - component: {fileID: 1043935909}
   m_Layer: 0
-  m_Name: Temp Camera
+  m_Name: Original Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2529,7 +2596,7 @@ GameObject:
   - component: {fileID: 1136201764}
   - component: {fileID: 1136201768}
   m_Layer: 0
-  m_Name: Saturns
+  m_Name: Saturn
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3167,6 +3234,7 @@ GameObject:
   - component: {fileID: 1385868538}
   - component: {fileID: 1385868537}
   - component: {fileID: 1385868536}
+  - component: {fileID: 1385868539}
   m_Layer: 0
   m_Name: Sun Camera
   m_TagString: Planet Camera
@@ -3292,6 +3360,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1385868539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385868534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1403244452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,6 +3910,7 @@ GameObject:
   - component: {fileID: 1636190856}
   - component: {fileID: 1636190855}
   - component: {fileID: 1636190854}
+  - component: {fileID: 1636190857}
   m_Layer: 0
   m_Name: Uranus Camera
   m_TagString: Planet Camera
@@ -3955,6 +4036,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1636190857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636190852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1666474561
 GameObject:
   m_ObjectHideFlags: 0
@@ -3967,6 +4060,7 @@ GameObject:
   - component: {fileID: 1666474565}
   - component: {fileID: 1666474564}
   - component: {fileID: 1666474563}
+  - component: {fileID: 1666474566}
   m_Layer: 0
   m_Name: Moon Camera
   m_TagString: Planet Camera
@@ -4092,6 +4186,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1666474566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666474561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1684298088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,6 +4896,7 @@ GameObject:
   - component: {fileID: 1866516284}
   - component: {fileID: 1866516283}
   - component: {fileID: 1866516282}
+  - component: {fileID: 1866516285}
   m_Layer: 0
   m_Name: Venus Camera
   m_TagString: Planet Camera
@@ -4915,6 +5022,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1866516285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866516280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d18f42a0226645bc1b37f6b9c31a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1911463364
 GameObject:
   m_ObjectHideFlags: 0
@@ -5609,8 +5728,8 @@ SceneRoots:
   - {fileID: 1091255161}
   - {fileID: 207147542}
   - {fileID: 1230568864}
-  - {fileID: 188341046}
   - {fileID: 409024018}
   - {fileID: 100637772}
+  - {fileID: 188341046}
   - {fileID: 1210172396}
   - {fileID: 1043935912}

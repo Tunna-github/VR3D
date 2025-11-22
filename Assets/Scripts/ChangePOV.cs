@@ -1,7 +1,10 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangePOV : MonoBehaviour
 {
+    public Transform sunCamera;
     public Transform mercuryCamera;
     public Transform venusCamera;
     public Transform earthCamera;
@@ -11,14 +14,28 @@ public class ChangePOV : MonoBehaviour
     public Transform saturnCamera;
     public Transform uranusCamera;
     public Transform neptuneCamera;
+    public Transform originalCamera;
+
+    //[SerializeField] bool SunPOV = false;
+    //[SerializeField] bool MercuryPOV = false;
+    //[SerializeField] bool VenusPOV = false;
+    //[SerializeField] bool EarthPOV = false;
+    //[SerializeField] bool MoonPOV = false;
+    //[SerializeField] bool MarsPOV = false;
+    //[SerializeField] bool JupiterPOV = false;
+    //[SerializeField] bool SaturnPOV = false;
+    //[SerializeField] bool UranusPOV = false;
+    //[SerializeField] bool NeptunePOV = false;
+    //[SerializeField] bool OriginalCamera = true;
+
+    //private List<bool> povBools = new List<bool>();
 
     public Transform xrOrigin;
-    private Transform originalPosition;
-
     private string currentPOV = "Origin";
 
-    private void Start() {
-        originalPosition = xrOrigin;
+    [ContextMenu("Change to Sun POV")]
+    public void ChangeToSunPOV() {
+        currentPOV = "Sun";
     }
 
     [ContextMenu("Change to Mercury POV")]
@@ -73,6 +90,9 @@ public class ChangePOV : MonoBehaviour
 
     private void LateUpdate() {
         switch (currentPOV) {
+            case "Sun":
+                xrOrigin.position = sunCamera.position;
+                break;
             case "Mercury":
                 xrOrigin.position = mercuryCamera.position;
                 break;
@@ -101,7 +121,7 @@ public class ChangePOV : MonoBehaviour
                 xrOrigin.position = neptuneCamera.position;
                 break;
             case "Origin":
-                xrOrigin.position = originalPosition.position;
+                xrOrigin.position = originalCamera.position;
                 break;
             default:
                 Debug.Log("Something went wrong!");
