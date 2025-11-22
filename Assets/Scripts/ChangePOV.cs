@@ -16,19 +16,65 @@ public class ChangePOV : MonoBehaviour
     public Transform neptuneCamera;
     public Transform originalCamera;
 
-    //[SerializeField] bool SunPOV = false;
-    //[SerializeField] bool MercuryPOV = false;
-    //[SerializeField] bool VenusPOV = false;
-    //[SerializeField] bool EarthPOV = false;
-    //[SerializeField] bool MoonPOV = false;
-    //[SerializeField] bool MarsPOV = false;
-    //[SerializeField] bool JupiterPOV = false;
-    //[SerializeField] bool SaturnPOV = false;
-    //[SerializeField] bool UranusPOV = false;
-    //[SerializeField] bool NeptunePOV = false;
-    //[SerializeField] bool OriginalCamera = true;
+    [SerializeField] bool SunPOV = false;
+    [SerializeField] bool MercuryPOV = false;
+    [SerializeField] bool VenusPOV = false;
+    [SerializeField] bool EarthPOV = false;
+    [SerializeField] bool MoonPOV = false;
+    [SerializeField] bool MarsPOV = false;
+    [SerializeField] bool JupiterPOV = false;
+    [SerializeField] bool SaturnPOV = false;
+    [SerializeField] bool UranusPOV = false;
+    [SerializeField] bool NeptunePOV = false;
+    [SerializeField] bool OriginalCamera = false;
 
-    //private List<bool> povBools = new List<bool>();
+
+    private void OnValidate() {
+        if (SunPOV) {
+            ChangeToSunPOV();
+            SunPOV = false;
+        }
+        else if (MercuryPOV) {
+            ChangeToMercuryPOV();
+            MercuryPOV = false;
+        }
+        else if (VenusPOV) {
+            ChangeToVenusPOV();
+            VenusPOV = false;
+        }
+        else if (EarthPOV) {
+            ChangeToEarthPOV();
+            EarthPOV = false;
+        }
+        else if (MoonPOV) {
+            ChangeToMoonPOV();
+            MoonPOV = false;
+        }
+        else if (MarsPOV) {
+            ChangeToMarsPOV();
+            MarsPOV = false;
+        }
+        else if (JupiterPOV) {
+            ChangeToJupiterPOV();
+            JupiterPOV = false;
+        }
+        else if (SaturnPOV) {
+            ChangeToSaturnPOV();
+            SaturnPOV = false;
+        }
+        else if (UranusPOV) {
+            ChangeToUranusPOV();
+            UranusPOV = false;
+        }
+        else if (NeptunePOV) {
+            ChangeToNeptunePOV();
+            NeptunePOV = false;
+        }
+        else if (OriginalCamera) {
+            ChangeToOriginalPOV();
+            OriginalCamera = false;
+        }
+    }
 
     public Transform xrOrigin;
     private string currentPOV = "Origin";

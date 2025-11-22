@@ -477,10 +477,21 @@ MonoBehaviour:
   moonCamera: {fileID: 1666474562}
   marsCamera: {fileID: 819322038}
   jupiterCamera: {fileID: 76058698}
-  saturnCamera: {fileID: 76058698}
+  saturnCamera: {fileID: 365493600}
   uranusCamera: {fileID: 1636190853}
   neptuneCamera: {fileID: 256341465}
   originalCamera: {fileID: 1043935912}
+  SunPOV: 0
+  MercuryPOV: 0
+  VenusPOV: 0
+  EarthPOV: 0
+  MoonPOV: 0
+  MarsPOV: 0
+  JupiterPOV: 0
+  SaturnPOV: 0
+  UranusPOV: 0
+  NeptunePOV: 0
+  OriginalCamera: 0
   xrOrigin: {fileID: 536829100}
 --- !u!4 &188341046
 Transform:
