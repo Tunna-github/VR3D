@@ -21,7 +21,7 @@ public class PlanetCameraScript : MonoBehaviour
         offset = currentCamera.position - followPlanet.position;
     }
 
-    private void LateUpdate() {
+    private void Update() {
         currentCamera.position = followPlanet.position + offset;
     }
 }
