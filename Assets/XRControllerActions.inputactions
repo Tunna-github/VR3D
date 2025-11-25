@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "XRControllerActions",
+    "maps": [
+        {
+            "name": "XRPlayer",
+            "id": "750c36ec-5cc1-4801-895f-5261cf9991b6",
+            "actions": [
+                {
+                    "name": "OpenQuiz",
+                    "type": "Button",
+                    "id": "7ab8cfc0-76b6-4fd0-bb4b-4fc9c6f33919",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CloseQuiz",
+                    "type": "Button",
+                    "id": "663196db-9233-4cac-b5d3-6bcb75d82d47",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1b790932-2ce1-4a69-b5da-70967f19e5f8",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenQuiz",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "24a335a8-017a-47a9-b7b3-cb14e92d0620",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CloseQuiz",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
