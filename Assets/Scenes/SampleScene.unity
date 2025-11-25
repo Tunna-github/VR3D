@@ -799,8 +799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 10
-  orbitSpeed: 47
+  rotationSpeed: 5
+  orbitSpeed: 23.5
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &124661608
@@ -1130,8 +1130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: -6
-  orbitSpeed: 35
+  rotationSpeed: -12
+  orbitSpeed: 17.5
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &247279217
@@ -1542,8 +1542,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 120
-  orbitSpeed: 13
+  rotationSpeed: 60
+  orbitSpeed: 6.5
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &292095348
@@ -2416,8 +2416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 50
-  orbitSpeed: 5.4
+  rotationSpeed: 25
+  orbitSpeed: 2.7
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!4 &536829100 stripped
@@ -2709,8 +2709,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 40
-  orbitSpeed: 24
+  rotationSpeed: 20
+  orbitSpeed: 12
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &793407001
@@ -4285,9 +4285,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2141651114331267770, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449787133337329437, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074471628601745017, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_CastDistance
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074471628601745017, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483680
+      objectReference: {fileID: 0}
     - target: {fileID: 5033801203051696737, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663893676086941514, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_RayInteractor
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663893676086941514, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_UIScrollingEnabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6232745470614056083, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_TrackingType
@@ -4513,8 +4537,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: -60
-  orbitSpeed: 6.8
+  rotationSpeed: -120
+  orbitSpeed: 3.4
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1136201763
@@ -4640,8 +4664,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 100
-  orbitSpeed: 9
+  rotationSpeed: 50
+  orbitSpeed: 4.5
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1182140930
@@ -4876,6 +4900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1296311488}
+  - component: {fileID: 1296311489}
   m_Layer: 0
   m_Name: Earth and Moon
   m_TagString: Untagged
@@ -4897,8 +4922,26 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2112679885}
+  - {fileID: 1499202676}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1296311489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296311487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27bbbac3b9e1b04468019f2c030d8109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sunTransform: {fileID: 1403244456}
+  rotationSpeed: 25
+  orbitSpeed: 5
+  selfAxis: {x: 0, y: 1, z: 0}
+  orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1347561021
 GameObject:
   m_ObjectHideFlags: 0
@@ -5404,13 +5447,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 188341044}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 188341045}
+        m_TargetAssemblyTypeName: ChangePOV, Assembly-CSharp
+        m_MethodName: ChangeToOriginalPOV
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5593,11 +5636,11 @@ Transform:
   m_GameObject: {fileID: 1499202675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0576923, y: 0, z: 0}
-  m_LocalScale: {x: 0.26923075, y: 0.26923075, z: 0.26923075}
+  m_LocalPosition: {x: 55, y: 0, z: 0}
+  m_LocalScale: {x: 14, y: 14, z: 14}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2112679885}
+  m_Father: {fileID: 1296311488}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1499202677
 SphereCollider:
@@ -5686,8 +5729,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   earthTransform: {fileID: 2112679885}
-  rotationSpeed: 10
-  orbitSpeed: 13
+  rotationSpeed: 5
+  orbitSpeed: 6.5
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1535391055
@@ -7762,8 +7805,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 52, y: 52, z: 52}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1499202676}
+  m_Children: []
   m_Father: {fileID: 1296311488}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2112679887
@@ -7773,14 +7815,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112679881}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27bbbac3b9e1b04468019f2c030d8109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 50
-  orbitSpeed: 10
+  rotationSpeed: 25
+  orbitSpeed: 5
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1660057539 &9223372036854775807
