@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChangePOV : MonoBehaviour
 {
+    public static ChangePOV Instance { get; private set; }
+
     public Transform sunCamera;
     public Transform mercuryCamera;
     public Transform venusCamera;
@@ -14,6 +16,7 @@ public class ChangePOV : MonoBehaviour
     public Transform saturnCamera;
     public Transform uranusCamera;
     public Transform neptuneCamera;
+    public Transform solarEclipseCamera;
     public Transform originalCamera;
 
     [SerializeField] bool SunPOV = false;
@@ -27,6 +30,15 @@ public class ChangePOV : MonoBehaviour
     [SerializeField] bool UranusPOV = false;
     [SerializeField] bool NeptunePOV = false;
     [SerializeField] bool OriginalCamera = false;
+
+    private void Awake() {
+        if (Instance == null) {
+            Instance = this;
+        }
+        else {
+            Destroy(gameObject);
+        }
+    }
 
     private void OnValidate() {
         if (SunPOV) {
@@ -155,6 +167,13 @@ public class ChangePOV : MonoBehaviour
         OriginalCamera = false;
     }
 
+    public void ChangeToSolarEclipsePOV() {
+        currentPOV = "Solar Eclipse";
+        xrOrigin.position = solarEclipseCamera.position;
+        xrOrigin.rotation = solarEclipseCamera.rotation;
+        HUBScript.Instance.RotateWhenSolarEclispe();
+    }
+
     private void LateUpdate() {
         switch (currentPOV) {
             case "Sun":
@@ -200,6 +219,10 @@ public class ChangePOV : MonoBehaviour
             case "Origin":
                 xrOrigin.position = originalCamera.position;
                 //xrOrigin.rotation = originalCamera.rotation;
+                break;
+            case "Solar Eclipse":
+                break;
+            case "Lunar Eclipse":
                 break;
             default:
                 Debug.Log("Something went wrong!");
