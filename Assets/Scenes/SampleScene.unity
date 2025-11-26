@@ -453,7 +453,7 @@ Transform:
   m_GameObject: {fileID: 76058697}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -300, y: 0, z: -248.69135}
+  m_LocalPosition: {x: -555, y: 0, z: -259.88248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -832,8 +832,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 5
-  orbitSpeed: 23.5
+  rotationSpeed: 2.5
+  orbitSpeed: 11.75
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &124661608
@@ -967,7 +967,7 @@ MonoBehaviour:
   saturnCamera: {fileID: 365493600}
   uranusCamera: {fileID: 1636190853}
   neptuneCamera: {fileID: 256341465}
-  solarEclipseCamera: {fileID: 0}
+  solarEclipseCamera: {fileID: 534432793}
   originalCamera: {fileID: 1043935912}
   SunPOV: 0
   MercuryPOV: 0
@@ -1285,8 +1285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: -12
-  orbitSpeed: 17.5
+  rotationSpeed: -6
+  orbitSpeed: 8.75
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &247279217
@@ -1453,8 +1453,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256341464}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1429.45, y: 0, z: -99.678406}
+  m_LocalRotation: {x: 0.026994945, y: -0.0014993286, z: 0.000040475086, w: 0.99963444}
+  m_LocalPosition: {x: -2205.688, y: 5.6221237, z: -104.01163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1818,8 +1818,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 60
-  orbitSpeed: 6.5
+  rotationSpeed: 30
+  orbitSpeed: 3.25
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &292095348
@@ -2149,7 +2149,7 @@ Transform:
   m_GameObject: {fileID: 365493599}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -739.7, y: 0, z: -254.97473}
+  m_LocalPosition: {x: -1050, y: 0, z: -258.09473}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2554,7 +2554,7 @@ Transform:
   m_GameObject: {fileID: 417700718}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2138, y: 100, z: -98.60797}
+  m_LocalPosition: {x: -2206, y: 100, z: -98.60797}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2573,8 +2573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 25
-  orbitSpeed: 2.7
+  rotationSpeed: 12.5
+  orbitSpeed: 1.35
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &486932333
@@ -3139,8 +3139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 20
-  orbitSpeed: 12
+  rotationSpeed: 10
+  orbitSpeed: 6
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &793407001
@@ -3308,7 +3308,7 @@ Transform:
   m_GameObject: {fileID: 801564411}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 417.2, y: 0, z: -24.768517}
+  m_LocalPosition: {x: 500, y: 0, z: -26.093819}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3458,7 +3458,7 @@ Transform:
   m_GameObject: {fileID: 819322037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -155.33, y: 0, z: -33.283142}
+  m_LocalPosition: {x: -251, y: 0, z: -29.165901}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3608,7 +3608,7 @@ Transform:
   m_GameObject: {fileID: 824461681}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000059604638, y: -1.6940657e-21, z: -5.0821973e-21, w: 1}
-  m_LocalPosition: {x: 18, y: 0, z: -51.042816}
+  m_LocalPosition: {x: 0, y: 0, z: -54.055573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4566,6 +4566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1025687729}
+  - component: {fileID: 1025687730}
   m_Layer: 0
   m_Name: Solar Eclipse Logic
   m_TagString: Untagged
@@ -4588,6 +4589,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1025687730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025687728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530fb8d1ee734b743857edef14ac9085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  earthScript: {fileID: 1296311489}
+  moonScript: {fileID: 1499202680}
+  earth: {fileID: 2112679885}
+  moon: {fileID: 1499202676}
+  earthAndMoon: {fileID: 1296311488}
 --- !u!1 &1039263170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4903,19 +4921,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.70710695
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.70710677
+      value: 0.70710665
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1.4210855e-14
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -9.543622e-15
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5299,7 +5317,7 @@ Transform:
   m_GameObject: {fileID: 1135440548}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1487, y: 100, z: -98.60797}
+  m_LocalPosition: {x: -1587, y: 100, z: -98.60797}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5318,8 +5336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: -120
-  orbitSpeed: 3.4
+  rotationSpeed: -60
+  orbitSpeed: 1.7
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1136201763
@@ -5445,8 +5463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 50
-  orbitSpeed: 4.5
+  rotationSpeed: 25
+  orbitSpeed: 2.25
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1182140930
@@ -5719,8 +5737,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunTransform: {fileID: 1403244456}
-  rotationSpeed: 50
-  orbitSpeed: 10
+  rotationSpeed: 25
+  orbitSpeed: 5
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1347561021
@@ -5914,7 +5932,7 @@ Transform:
   m_GameObject: {fileID: 1385868534}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1393.3, y: 0, z: -1008.79926}
+  m_LocalPosition: {x: 1093, y: 0, z: -1010.8464}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6647,8 +6665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   earthTransform: {fileID: 2112679885}
-  rotationSpeed: 5
-  orbitSpeed: 6.5
+  rotationSpeed: 2.5
+  orbitSpeed: 3.25
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1535391055
@@ -7234,8 +7252,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636190852}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1169.1, y: 0, z: -99.678406}
+  m_LocalRotation: {x: 0.026994945, y: -0.0014993286, z: 0.000040475086, w: 0.99963444}
+  m_LocalPosition: {x: -1586.688, y: 5.6221237, z: -104.01163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7416,7 +7434,7 @@ Transform:
   m_GameObject: {fileID: 1666474561}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000059604638, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.93, y: 0, z: -14.088982}
+  m_LocalPosition: {x: 70, y: 0, z: -14.582939}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8304,7 +8322,7 @@ Transform:
   m_GameObject: {fileID: 1866516280}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 222.96, y: 0, z: -49.537033}
+  m_LocalPosition: {x: 290, y: 0, z: -52.08197}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8493,7 +8511,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2000000
-  m_Range: 3800
+  m_Range: 10000
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
