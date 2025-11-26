@@ -23,18 +23,20 @@ public class QuizData
 public class QuizManager : MonoBehaviour
 {
     [Header("UI")]
-    public TMP_Text questionText;         
-    public Button[] answerButtons;        
-    public GameObject quizPanel;          
+    public TMP_Text questionText;
+    public Button[] answerButtons;
+    public GameObject quizPanel;
 
     [Header("JSON")]
     public string jsonFileName = "quiz.json";
 
     [Header("VR Input")]
-    public InputActionProperty openQuizAction;   
-    public InputActionProperty closeQuizAction;  
+    public InputActionProperty openQuizAction;
+    public InputActionProperty closeQuizAction;
 
     private QuizData quizData;
+
+    private QuizQuestion currentQuestion;
 
     void Start()
     {
@@ -49,7 +51,6 @@ public class QuizManager : MonoBehaviour
 
     void Update()
     {
-
         if (openQuizAction != null &&
             openQuizAction.action != null &&
             openQuizAction.action.WasPressedThisFrame())
@@ -57,7 +58,6 @@ public class QuizManager : MonoBehaviour
             Debug.Log("Open Quiz");
             ShowQuizPanel();
         }
-
 
         if (closeQuizAction != null &&
             closeQuizAction.action != null &&
@@ -86,24 +86,71 @@ public class QuizManager : MonoBehaviour
         if (quizData != null && quizData.questions.Count > 0)
         {
             int randomIndex = Random.Range(0, quizData.questions.Count);
-            QuizQuestion q = quizData.questions[randomIndex];
+            currentQuestion = quizData.questions[randomIndex];
 
             if (questionText != null)
-                questionText.text = q.question;
+                questionText.text = currentQuestion.question;
 
             for (int i = 0; i < answerButtons.Length; i++)
             {
-                if (i < q.answers.Length)
+                Button btn = answerButtons[i];
+
+                if (i < currentQuestion.answers.Length)
                 {
-                    TMP_Text btnText = answerButtons[i].GetComponentInChildren<TMP_Text>();
-                    btnText.text = q.answers[i];
-                    answerButtons[i].gameObject.SetActive(true);
+                    TMP_Text btnText = btn.GetComponentInChildren<TMP_Text>();
+                    btnText.text = currentQuestion.answers[i];
+                    btn.gameObject.SetActive(true);
+
+                    btn.onClick.RemoveAllListeners();
+                    btn.onClick.AddListener(() => CheckAnswer(btn));
                 }
                 else
                 {
-                    answerButtons[i].gameObject.SetActive(false);
+                    btn.gameObject.SetActive(false);
+                }
+
+                Image img = btn.GetComponent<Image>();
+                if (img != null)
+                    img.color = Color.white;
+
+                btn.interactable = true;
+            }
+        }
+    }
+
+    private void CheckAnswer(Button selectedButton)
+    {
+        string playerAnswer = selectedButton.GetComponentInChildren<TMP_Text>().text;
+        bool isCorrect = playerAnswer == currentQuestion.correctAnswer;
+
+        Image selectedImg = selectedButton.GetComponent<Image>();
+
+        if (isCorrect)
+        {
+            if (selectedImg != null)
+                selectedImg.color = Color.green;
+        }
+        else
+        {
+            if (selectedImg != null)
+                selectedImg.color = Color.red;
+
+            foreach (Button btn in answerButtons)
+            {
+                TMP_Text t = btn.GetComponentInChildren<TMP_Text>();
+                if (t != null && t.text == currentQuestion.correctAnswer)
+                {
+                    Image img = btn.GetComponent<Image>();
+                    if (img != null)
+                        img.color = Color.green;
+                    break;
                 }
             }
+        }
+
+        foreach (Button btn in answerButtons)
+        {
+            btn.interactable = false;
         }
     }
 
@@ -113,7 +160,7 @@ public class QuizManager : MonoBehaviour
         if (quizPanel != null)
         {
             quizPanel.SetActive(true);
-            ShowRandomQuestion(); 
+            ShowRandomQuestion();
         }
     }
 
