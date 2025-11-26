@@ -70,6 +70,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Sun POV")]
     public void ChangeToSunPOV() {
         currentPOV = "Sun";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         SunPOV = false;
     }
@@ -77,6 +78,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Mercury POV")]
     public void ChangeToMercuryPOV() {
         currentPOV = "Mercury";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         MercuryPOV = false;
     }
@@ -84,6 +86,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Venus POV")]
     public void ChangeToVenusPOV() {
         currentPOV = "Venus";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         VenusPOV = false;
     }
@@ -91,6 +94,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Earth POV")]
     public void ChangeToEarthPOV() {
         currentPOV = "Earth";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         EarthPOV = false;
     }
@@ -98,6 +102,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Moon POV")]
     public void ChangeToMoonPOV() {
         currentPOV = "Moon";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         MoonPOV = false;
     }
@@ -105,6 +110,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Mars POV")]
     public void ChangeToMarsPOV() {
         currentPOV = "Mars";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         MarsPOV = false;
     }
@@ -112,6 +118,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Jupiter POV")]
     public void ChangeToJupiterPOV() {
         currentPOV = "Jupiter";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         JupiterPOV = false;
     }
@@ -119,6 +126,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Saturn POV")]
     public void ChangeToSaturnPOV() {
         currentPOV = "Saturn";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         SaturnPOV = false;
     }
@@ -126,6 +134,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Uranus POV")]
     public void ChangeToUranusPOV() {
         currentPOV = "Uranus";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         UranusPOV = false;
     }
@@ -133,6 +142,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Neptune POV")]
     public void ChangeToNeptunePOV() {
         currentPOV = "Neptune";
+        xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
         NeptunePOV = false;
     }
@@ -140,6 +150,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Original POV")]
     public void ChangeToOriginalPOV() {
         currentPOV = "Origin";
+        xrOrigin.rotation = originalCamera.rotation;
         HUBScript.Instance.RotateWhenNotFollowing();
         OriginalCamera = false;
     }
@@ -148,47 +159,47 @@ public class ChangePOV : MonoBehaviour
         switch (currentPOV) {
             case "Sun":
                 xrOrigin.position = sunCamera.position;
-                xrOrigin.rotation = sunCamera.rotation;
+                //xrOrigin.rotation = sunCamera.rotation;
                 break;
             case "Mercury":
                 xrOrigin.position = mercuryCamera.position;
-                xrOrigin.rotation = mercuryCamera.rotation;
+                //xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
                 break;
             case "Venus":
                 xrOrigin.position = venusCamera.position;
-                xrOrigin.rotation = venusCamera.rotation;
+                //xrOrigin.rotation = venusCamera.rotation;
                 break;
             case "Earth":
                 xrOrigin.position = earthCamera.position;
-                xrOrigin.rotation = earthCamera.rotation;
+                //xrOrigin.rotation = earthCamera.rotation;
                 break;
             case "Moon":
                 xrOrigin.position = moonCamera.position;
-                xrOrigin.rotation = moonCamera.rotation;
+                //xrOrigin.rotation = moonCamera.rotation;
                 break;
             case "Mars":
                 xrOrigin.position = marsCamera.position;
-                xrOrigin.rotation = marsCamera.rotation;
+                //xrOrigin.rotation = marsCamera.rotation;
                 break;
             case "Jupiter":
                 xrOrigin.position = jupiterCamera.position;
-                xrOrigin.rotation = jupiterCamera.rotation;
+                //xrOrigin.rotation = jupiterCamera.rotation;
                 break;
             case "Saturn":
                 xrOrigin.position = saturnCamera.position;
-                xrOrigin.rotation = saturnCamera.rotation;
+                //xrOrigin.rotation = saturnCamera.rotation;
                 break;
             case "Uranus":
                 xrOrigin.position = uranusCamera.position;
-                xrOrigin.rotation = uranusCamera.rotation;
+                //xrOrigin.rotation = uranusCamera.rotation;
                 break;
             case "Neptune":
                 xrOrigin.position = neptuneCamera.position;
-                xrOrigin.rotation = neptuneCamera.rotation;
+                //xrOrigin.rotation = neptuneCamera.rotation;
                 break;
             case "Origin":
                 xrOrigin.position = originalCamera.position;
-                xrOrigin.rotation = originalCamera.rotation;
+                //xrOrigin.rotation = originalCamera.rotation;
                 break;
             default:
                 Debug.Log("Something went wrong!");
