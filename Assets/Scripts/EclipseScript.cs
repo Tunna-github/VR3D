@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SolarEclipseScript : MonoBehaviour
+public class EclipseScript : MonoBehaviour
 {
     public Earth earthScript;
     public Moon moonScript;
@@ -16,7 +16,20 @@ public class SolarEclipseScript : MonoBehaviour
     }
 
     [ContextMenu("Solar Eclipse")]
-    public void SolarEclipse() { 
+    public void SolarEclipse() {
+        Eclipse(70f);
+        ChangePOV.Instance.ChangeToSolarEclipsePOV();
+        ShadowCasting("Cast");
+    }
+
+    [ContextMenu("Lunar Eclipse")]
+    public void LunarEclipse() {
+        Eclipse(-70f);
+        ChangePOV.Instance.ChangeToLunarEclipsePOV();
+        ShadowCasting("Cast");
+    }
+
+    private void Eclipse(float moonPosition) {
         StopRotationAndOrbital();
 
         earthAndMoon.position = new Vector3(0, 100, -100);
@@ -26,15 +39,11 @@ public class SolarEclipseScript : MonoBehaviour
         earth.localPosition = new Vector3(0, 0, 0);
 
         moon.localRotation = Quaternion.Euler(0, 0, 0);
-        moon.localPosition = new Vector3(70, 0, 0);
-
-        //HUBScript.Instance.DisableHUB();
-        ChangePOV.Instance.ChangeToSolarEclipsePOV();
-        ShadowCasting("Cast");
+        moon.localPosition = new Vector3(moonPosition, 0, 0);
     }
 
-    [ContextMenu("Stop Solar Eclipse")]
-    public void StopSolarEclipse() {
+    [ContextMenu("Stop Eclipse")]
+    public void StopEclipse() {
         if (earthScript != null) {
             earthScript.Reset();
         }
@@ -43,7 +52,7 @@ public class SolarEclipseScript : MonoBehaviour
         }
 
         //HUBScript.Instance.EnableHUB();
-        ChangePOV.Instance.ChangeToEarthPOV();
+        //ChangePOV.Instance.ChangeToEarthPOV();
         ShadowCasting("Uncast");
     }
 

@@ -4,8 +4,8 @@ public class Earth : MonoBehaviour
 {
     public Transform sunTransform;
 
-    public float rotationSpeed = 50f;
-    public float orbitSpeed = 10f;
+    public float rotationSpeed = 50/2f;
+    public float orbitSpeed = 10/2f;
 
     private float originalOrbitalSpeed;
     private float originalRotationSpeed;

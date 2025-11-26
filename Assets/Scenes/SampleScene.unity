@@ -968,6 +968,7 @@ MonoBehaviour:
   uranusCamera: {fileID: 1636190853}
   neptuneCamera: {fileID: 256341465}
   solarEclipseCamera: {fileID: 534432793}
+  lunarEclipseCamera: {fileID: 1103542982}
   originalCamera: {fileID: 1043935912}
   SunPOV: 0
   MercuryPOV: 0
@@ -980,6 +981,7 @@ MonoBehaviour:
   UranusPOV: 0
   NeptunePOV: 0
   OriginalCamera: 0
+  eclipseScript: {fileID: 2094065372}
   xrOrigin: {fileID: 536829100}
 --- !u!4 &188341046
 Transform:
@@ -2741,7 +2743,7 @@ Transform:
   m_GameObject: {fileID: 534432792}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710665, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 185, y: 33.32657, z: -182.1}
+  m_LocalPosition: {x: 187, y: 32, z: -183.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4557,55 +4559,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009604328}
   m_CullTransparentMesh: 1
---- !u!1 &1025687728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1025687729}
-  - component: {fileID: 1025687730}
-  m_Layer: 0
-  m_Name: Solar Eclipse Logic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1025687729
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025687728}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7355056, y: 179.26123, z: -403.26358}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1025687730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025687728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 530fb8d1ee734b743857edef14ac9085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  earthScript: {fileID: 1296311489}
-  moonScript: {fileID: 1499202680}
-  earth: {fileID: 2112679885}
-  moon: {fileID: 1499202676}
-  earthAndMoon: {fileID: 1296311488}
 --- !u!1 &1039263170
 GameObject:
   m_ObjectHideFlags: 0
@@ -5019,13 +4972,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103542981}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 87, y: 32, z: -183}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 13664985}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1103542983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5715,8 +5668,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296311487}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 100, z: -98.60797}
+  m_LocalRotation: {x: 0.20364176, y: 0, z: 0, w: 0.97904545}
+  m_LocalPosition: {x: 0, y: 100, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6571,7 +6524,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499202675}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.14608304, y: -0, z: -0, w: 0.98927236}
   m_LocalPosition: {x: 70, y: 0, z: 0}
   m_LocalScale: {x: 14, y: 14, z: 14}
   m_ConstrainProportionsScale: 0
@@ -6665,8 +6618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   earthTransform: {fileID: 2112679885}
-  rotationSpeed: 2.5
-  orbitSpeed: 3.25
+  rotationSpeed: 5
+  orbitSpeed: 6.5
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1535391055
@@ -8828,8 +8781,8 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2000000
   m_Range: 4000
-  m_SpotAngle: 5
-  m_InnerSpotAngle: 0
+  m_SpotAngle: 10
+  m_InnerSpotAngle: 5
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -9394,6 +9347,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064133120}
   m_CullTransparentMesh: 1
+--- !u!1 &2094065370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2094065371}
+  - component: {fileID: 2094065372}
+  m_Layer: 0
+  m_Name: Eclipse Logic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2094065371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094065370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7355056, y: 179.26123, z: -403.26358}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094065372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094065370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244ffa434b35bdd4b88454e7417092ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  earthScript: {fileID: 1296311489}
+  moonScript: {fileID: 1499202680}
+  earth: {fileID: 2112679885}
+  moon: {fileID: 1499202676}
+  earthAndMoon: {fileID: 1296311488}
 --- !u!1 &2096480470
 GameObject:
   m_ObjectHideFlags: 0
@@ -9603,7 +9605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112679881}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 52, y: 52, z: 52}
   m_ConstrainProportionsScale: 0
@@ -9765,7 +9767,7 @@ SceneRoots:
   - {fileID: 409024018}
   - {fileID: 13664985}
   - {fileID: 394031425}
-  - {fileID: 1025687729}
+  - {fileID: 2094065371}
   - {fileID: 188341046}
   - {fileID: 1043935912}
   - {fileID: 207147542}
