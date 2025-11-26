@@ -15,7 +15,7 @@ public class Uranus : MonoBehaviour
         transform.rotation = Quaternion.Euler(97f, 0f, 0f);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (sunTransform == null) return;
 

@@ -15,7 +15,7 @@ public class Jupiter : MonoBehaviour
         transform.rotation = Quaternion.Euler(3f, 0f, 0f);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (sunTransform == null) return;
 

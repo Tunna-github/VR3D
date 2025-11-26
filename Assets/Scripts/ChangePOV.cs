@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChangePOV : MonoBehaviour
 {
+    public static ChangePOV Instance { get; private set; }
+
     public Transform sunCamera;
     public Transform mercuryCamera;
     public Transform venusCamera;
@@ -14,6 +16,8 @@ public class ChangePOV : MonoBehaviour
     public Transform saturnCamera;
     public Transform uranusCamera;
     public Transform neptuneCamera;
+    public Transform solarEclipseCamera;
+    public Transform lunarEclipseCamera;
     public Transform originalCamera;
 
     [SerializeField] bool SunPOV = false;
@@ -27,6 +31,19 @@ public class ChangePOV : MonoBehaviour
     [SerializeField] bool UranusPOV = false;
     [SerializeField] bool NeptunePOV = false;
     [SerializeField] bool OriginalCamera = false;
+
+    [Header("Eclipse Scripts")]
+    public EclipseScript eclipseScript;
+
+
+    private void Awake() {
+        if (Instance == null) {
+            Instance = this;
+        }
+        else {
+            Destroy(gameObject);
+        }
+    }
 
     private void OnValidate() {
         if (SunPOV) {
@@ -69,6 +86,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Sun POV")]
     public void ChangeToSunPOV() {
+        EclipseHandler();
+
         currentPOV = "Sun";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -77,6 +96,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Mercury POV")]
     public void ChangeToMercuryPOV() {
+        EclipseHandler();
+
         currentPOV = "Mercury";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -85,6 +106,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Venus POV")]
     public void ChangeToVenusPOV() {
+        EclipseHandler();
+
         currentPOV = "Venus";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -93,6 +116,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Earth POV")]
     public void ChangeToEarthPOV() {
+        EclipseHandler();
+
         currentPOV = "Earth";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -101,6 +126,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Moon POV")]
     public void ChangeToMoonPOV() {
+        EclipseHandler();
+
         currentPOV = "Moon";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -109,6 +136,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Mars POV")]
     public void ChangeToMarsPOV() {
+        EclipseHandler();
+
         currentPOV = "Mars";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -117,6 +146,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Jupiter POV")]
     public void ChangeToJupiterPOV() {
+        EclipseHandler();
+
         currentPOV = "Jupiter";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -125,6 +156,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Saturn POV")]
     public void ChangeToSaturnPOV() {
+        EclipseHandler();
+
         currentPOV = "Saturn";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -133,6 +166,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Uranus POV")]
     public void ChangeToUranusPOV() {
+        EclipseHandler();
+
         currentPOV = "Uranus";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -141,6 +176,8 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Neptune POV")]
     public void ChangeToNeptunePOV() {
+        EclipseHandler();
+
         currentPOV = "Neptune";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
         HUBScript.Instance.RotateWhenFollowing();
@@ -149,10 +186,25 @@ public class ChangePOV : MonoBehaviour
 
     [ContextMenu("Change to Original POV")]
     public void ChangeToOriginalPOV() {
+        EclipseHandler();
         currentPOV = "Origin";
         xrOrigin.rotation = originalCamera.rotation;
         HUBScript.Instance.RotateWhenNotFollowing();
         OriginalCamera = false;
+    }
+
+    public void ChangeToSolarEclipsePOV() {
+        currentPOV = "Solar Eclipse";
+        xrOrigin.position = solarEclipseCamera.position;
+        xrOrigin.rotation = solarEclipseCamera.rotation;
+        HUBScript.Instance.RotateWhenSolarEclispe();
+    }
+
+    public void ChangeToLunarEclipsePOV() {
+        currentPOV = "Lunar Eclipse";
+        xrOrigin.position = lunarEclipseCamera.position;
+        xrOrigin.rotation = lunarEclipseCamera.rotation;
+        HUBScript.Instance.RotateWhenSolarEclispe();
     }
 
     private void LateUpdate() {
@@ -201,9 +253,19 @@ public class ChangePOV : MonoBehaviour
                 xrOrigin.position = originalCamera.position;
                 //xrOrigin.rotation = originalCamera.rotation;
                 break;
+            case "Solar Eclipse":
+                break;
+            case "Lunar Eclipse":
+                break;
             default:
                 Debug.Log("Something went wrong!");
                 break;
+        }
+    }
+
+    private void EclipseHandler() {
+        if (currentPOV == "Solar Eclipse" || currentPOV == "Lunar Eclipse") {
+            eclipseScript.StopEclipse();
         }
     }
 }
