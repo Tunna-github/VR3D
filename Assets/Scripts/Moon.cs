@@ -19,7 +19,7 @@ public class Moon : MonoBehaviour {
         transform.rotation = Quaternion.Euler(6.7f, 0f, 0f);
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         if (earthTransform == null) {
             Debug.LogWarning("Cant find Earth transform");
             return;
