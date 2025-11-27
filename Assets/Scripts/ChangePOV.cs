@@ -32,9 +32,11 @@ public class ChangePOV : MonoBehaviour
     [SerializeField] bool NeptunePOV = false;
     [SerializeField] bool OriginalCamera = false;
 
-    [Header("Eclipse Scripts")]
+    [Header("Eclipse Script")]
     public EclipseScript eclipseScript;
 
+    [Header("Quiz Manager")]
+    public QuizManager quizManager;
 
     private void Awake() {
         if (Instance == null) {
@@ -87,6 +89,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Sun POV")]
     public void ChangeToSunPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Sun";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -97,6 +100,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Mercury POV")]
     public void ChangeToMercuryPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Mercury";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -107,6 +111,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Venus POV")]
     public void ChangeToVenusPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Venus";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -117,6 +122,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Earth POV")]
     public void ChangeToEarthPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Earth";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -127,6 +133,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Moon POV")]
     public void ChangeToMoonPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Moon";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -137,6 +144,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Mars POV")]
     public void ChangeToMarsPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Mars";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -147,6 +155,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Jupiter POV")]
     public void ChangeToJupiterPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Jupiter";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -157,6 +166,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Saturn POV")]
     public void ChangeToSaturnPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Saturn";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -167,6 +177,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Uranus POV")]
     public void ChangeToUranusPOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Uranus";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -177,6 +188,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Neptune POV")]
     public void ChangeToNeptunePOV() {
         EclipseHandler();
+        quizManager.HideQuizPanel();
 
         currentPOV = "Neptune";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -187,6 +199,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Original POV")]
     public void ChangeToOriginalPOV() {
         EclipseHandler();
+
         currentPOV = "Origin";
         xrOrigin.rotation = originalCamera.rotation;
         HUBScript.Instance.RotateWhenNotFollowing();

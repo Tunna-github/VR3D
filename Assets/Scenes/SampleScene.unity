@@ -982,6 +982,7 @@ MonoBehaviour:
   NeptunePOV: 0
   OriginalCamera: 0
   eclipseScript: {fileID: 2094065372}
+  quizManager: {fileID: 905041923}
   xrOrigin: {fileID: 536829100}
 --- !u!4 &188341046
 Transform:
@@ -3891,7 +3892,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905041917}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -9466.943}
+  m_LocalPosition: {x: 0, y: 0, z: -10000}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
