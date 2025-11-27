@@ -21,4 +21,14 @@ public class PlanetInfoManager : MonoBehaviour
             descriptionText.text = description.Replace("\\n", "\n");
         }
     }
+
+    public void ShowPlanetInfo()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void HidePlanetInfo()
+    {
+        gameObject.SetActive(false);
+    }
 }

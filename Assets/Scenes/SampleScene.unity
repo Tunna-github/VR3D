@@ -983,6 +983,7 @@ MonoBehaviour:
   OriginalCamera: 0
   eclipseScript: {fileID: 2094065372}
   quizManager: {fileID: 905041923}
+  planetInfoManager: {fileID: 124661612}
   xrOrigin: {fileID: 536829100}
 --- !u!4 &188341046
 Transform:
@@ -9754,6 +9755,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 832575519}
+  - {fileID: 1043935912}
   - {fileID: 1403244456}
   - {fileID: 112268175}
   - {fileID: 218243588}
@@ -9770,7 +9772,6 @@ SceneRoots:
   - {fileID: 394031425}
   - {fileID: 2094065371}
   - {fileID: 188341046}
-  - {fileID: 1043935912}
   - {fileID: 207147542}
   - {fileID: 1230568864}
   - {fileID: 1649187404}

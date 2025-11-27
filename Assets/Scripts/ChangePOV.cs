@@ -38,6 +38,9 @@ public class ChangePOV : MonoBehaviour
     [Header("Quiz Manager")]
     public QuizManager quizManager;
 
+    [Header("Planet Info Manager")]
+    public PlanetInfoManager planetInfoManager;
+
     private void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -83,6 +86,7 @@ public class ChangePOV : MonoBehaviour
         }
     }
 
+    [Header("XR Origin")]
     public Transform xrOrigin;
     private string currentPOV = "Origin";
 
@@ -90,6 +94,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToSunPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Sun";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -101,6 +106,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToMercuryPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Mercury";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -112,6 +118,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToVenusPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Venus";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -123,6 +130,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToEarthPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Earth";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -134,6 +142,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToMoonPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Moon";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -145,6 +154,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToMarsPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Mars";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -156,6 +166,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToJupiterPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Jupiter";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -167,6 +178,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToSaturnPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Saturn";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -178,6 +190,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToUranusPOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Uranus";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -189,6 +202,7 @@ public class ChangePOV : MonoBehaviour
     public void ChangeToNeptunePOV() {
         EclipseHandler();
         quizManager.HideQuizPanel();
+        planetInfoManager.ShowPlanetInfo();
 
         currentPOV = "Neptune";
         xrOrigin.rotation = xrOrigin.rotation = Quaternion.identity;
@@ -199,6 +213,7 @@ public class ChangePOV : MonoBehaviour
     [ContextMenu("Change to Original POV")]
     public void ChangeToOriginalPOV() {
         EclipseHandler();
+        planetInfoManager.HidePlanetInfo();
 
         currentPOV = "Origin";
         xrOrigin.rotation = originalCamera.rotation;
@@ -207,6 +222,9 @@ public class ChangePOV : MonoBehaviour
     }
 
     public void ChangeToSolarEclipsePOV() {
+        planetInfoManager.HidePlanetInfo();
+        quizManager.HideQuizPanel();
+
         currentPOV = "Solar Eclipse";
         xrOrigin.position = solarEclipseCamera.position;
         xrOrigin.rotation = solarEclipseCamera.rotation;
@@ -214,6 +232,9 @@ public class ChangePOV : MonoBehaviour
     }
 
     public void ChangeToLunarEclipsePOV() {
+        planetInfoManager.HidePlanetInfo();
+        quizManager.HideQuizPanel();
+
         currentPOV = "Lunar Eclipse";
         xrOrigin.position = lunarEclipseCamera.position;
         xrOrigin.rotation = lunarEclipseCamera.rotation;
