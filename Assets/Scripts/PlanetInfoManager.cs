@@ -8,6 +8,11 @@ public class PlanetInfoManager : MonoBehaviour
     public TextMeshProUGUI descriptionText;
 
     // Hàm công khai để nhận dữ liệu từ PlanetButtonData
+
+    private void Start()
+    {
+        HidePlanetInfo();
+    }
     public void UpdatePlanetInfo(string name, string description)
     {
         if (planetNameText != null)
