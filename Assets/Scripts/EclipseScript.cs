@@ -60,9 +60,9 @@ public class EclipseScript : MonoBehaviour
         MeshRenderer moonMeshRender = moon.GetComponent<MeshRenderer>();
         MeshRenderer earthMeshRender = earth.GetComponent<MeshRenderer>();
 
-        int layer = type == "Cast" ? 1 : 0;
-        moonMeshRender.renderingLayerMask = 1u << layer;
-        earthMeshRender.renderingLayerMask = 1u << layer;
+        //int layer = type == "Cast" ? 1 : 0;
+        //moonMeshRender.renderingLayerMask = 1u << layer;
+        //earthMeshRender.renderingLayerMask = 1u << layer;
     }
 
     private void StopRotationAndOrbital() {

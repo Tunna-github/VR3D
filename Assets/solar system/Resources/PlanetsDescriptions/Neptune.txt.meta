@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a319d9376d281ab4d83977833ebd6f62
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Resources/PlanetsDescriptions/Neptune.txt
+  uploadId: 444575

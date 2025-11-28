@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b6922c7a3916c424a8fd61698cc34159
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Resources/PlanetsDescriptions/Mars.txt
+  uploadId: 444575

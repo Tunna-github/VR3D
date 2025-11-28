@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fc8541c04dd107847b09354166ed1a56
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Prefabs/Planets/Earth.prefab
+  uploadId: 444575

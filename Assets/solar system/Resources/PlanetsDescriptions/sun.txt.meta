@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2072422a2ae8357458197e756fb89311
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Resources/PlanetsDescriptions/sun.txt
+  uploadId: 444575

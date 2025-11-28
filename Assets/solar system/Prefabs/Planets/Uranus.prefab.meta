@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f5aded14b69442408784335ff3e94ab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Prefabs/Planets/Uranus.prefab
+  uploadId: 444575

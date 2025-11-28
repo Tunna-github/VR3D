@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a209ce7c0d499b845b7e09467206c6a0
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Resources/PlanetsDescriptions/Star background plane.txt
+  uploadId: 444575
