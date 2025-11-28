@@ -323,7 +323,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &62555060
 MonoBehaviour:
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Neptune
+  m_text: "Sao H\u1EA3i V\u01B0\u01A1ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1255.7
+  m_fontSize: 574.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -644,7 +644,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 18
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -698,17 +698,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111450719}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 124661609}
+  m_Father: {fileID: 1349229724}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.75324416}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: -400, y: -400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &112268171
 GameObject:
@@ -813,7 +813,7 @@ Transform:
   m_GameObject: {fileID: 112268171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 382, y: 100, z: -98.60797}
+  m_LocalPosition: {x: 382, y: 100, z: -100}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -867,8 +867,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 111450722}
-  - {fileID: 957571647}
+  - {fileID: 1349229724}
+  - {fileID: 566599064}
   m_Father: {fileID: 394031425}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -982,6 +982,8 @@ MonoBehaviour:
   NeptunePOV: 0
   OriginalCamera: 0
   eclipseScript: {fileID: 2094065372}
+  quizManager: {fileID: 905041923}
+  planetInfoManager: {fileID: 124661612}
   xrOrigin: {fileID: 536829100}
 --- !u!4 &188341046
 Transform:
@@ -1268,7 +1270,7 @@ Transform:
   m_GameObject: {fileID: 218243584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 172, y: 100, z: -98.60797}
+  m_LocalPosition: {x: 172, y: 100, z: -100}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1326,7 +1328,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247279219
 MonoBehaviour:
@@ -1348,7 +1350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mars
+  m_text: "Sao H\u1ECFa"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1375,7 +1377,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1370.7
+  m_fontSize: 917.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1801,7 +1803,7 @@ Transform:
   m_GameObject: {fileID: 286825458}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -673, y: 100, z: -98.60797}
+  m_LocalPosition: {x: -673, y: 100, z: -100}
   m_LocalScale: {x: 250, y: 250, z: 250}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1859,7 +1861,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292095350
 MonoBehaviour:
@@ -1881,7 +1883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Venus
+  m_text: Sao Kim
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1908,7 +1910,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1308.6
+  m_fontSize: 948.9
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1960,6 +1962,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292095348}
   m_CullTransparentMesh: 1
+--- !u!1 &312320366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312320367}
+  m_Layer: 5
+  m_Name: Eclipse Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &312320367
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312320366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2121539055}
+  m_Father: {fileID: 394031425}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.79800004, y: 0.15220337}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &323619338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,8 +2156,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: "Sao Th\u1EE7y"
-  planetDescription: lalala
+  planetName: "Sao Th\u1EE7y (Mercury)"
+  planetDescription: "Sao Th\u1EE7y l\xE0 h\xE0nh tinh nh\u1ECF nh\u1EA5t v\xE0 g\u1EA7n
+    M\u1EB7t Tr\u1EDDi nh\u1EA5t (kho\u1EA3ng 58 tri\u1EC7u km). H\xE0nh tinh \u0111\xE1
+    n\xE0y c\xF3 b\u1EC1 m\u1EB7t gi\u1ED1ng M\u1EB7t Tr\u0103ng v\u1EDBi nhi\u1EC1u
+    mi\u1EC7ng n\xFAi l\u1EEDa. \u0110\u1EB7c tr\u01B0ng c\u1EE7a n\xF3 l\xE0 s\u1EF1
+    ch\xEAnh l\u1EC7ch nhi\u1EC7t \u0111\u1ED9 c\u1EF1c \u0111\u1EA1i gi\u1EEFa ng\xE0y
+    (x\u1EA5p x\u1EC9 450 \u0110\u1ED9 C) v\xE0 \u0111\xEAm (x\u1EA5p x\u1EC9 \xE2m
+    180 \u0110\u1ED9 C) do kh\xF4ng c\xF3 b\u1EA7u kh\xED quy\u1EC3n d\xE0y. N\xF3
+    di chuy\u1EC3n nhanh nh\u1EA5t quanh M\u1EB7t Tr\u1EDDi. Tu\u1ED5i: Kho\u1EA3ng
+    4,6 t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
 --- !u!1 &365493599
@@ -2383,7 +2429,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394031420}
   m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalPosition: {x: 0, y: 0, z: -98.60752}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2391,11 +2437,12 @@ RectTransform:
   - {fileID: 124661609}
   - {fileID: 1104592922}
   - {fileID: 1403610275}
+  - {fileID: 312320367}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1000, y: 3000}
+  m_AnchoredPosition: {x: 993, y: 3011.433}
   m_SizeDelta: {x: 10000, y: 10000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394031426
@@ -2556,7 +2603,7 @@ Transform:
   m_GameObject: {fileID: 417700718}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2324, y: 100, z: -98.60797}
+  m_LocalPosition: {x: -2324, y: 100, z: -100}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2579,6 +2626,139 @@ MonoBehaviour:
   orbitSpeed: 1.35
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!1 &472119863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472119864}
+  - component: {fileID: 472119867}
+  - component: {fileID: 472119866}
+  - component: {fileID: 472119865}
+  m_Layer: 5
+  m_Name: Lunar Eclipse Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &472119864
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472119863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 555029066}
+  m_Father: {fileID: 2121539055}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &472119865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472119863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 472119866}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2094065372}
+        m_TargetAssemblyTypeName: EclipseScript, Assembly-CSharp
+        m_MethodName: LunarEclipse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &472119866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472119863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &472119867
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472119863}
+  m_CullTransparentMesh: 1
 --- !u!1 &486932333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2742,13 +2922,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534432792}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70710665, z: -0, w: 0.70710695}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 187, y: 32, z: -183.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 13664985}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &534432794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3015,10 +3195,186 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: "Sao Th\u1ED5"
-  planetDescription: saotho
+  planetName: "Sao Th\u1ED5 (Saturn)"
+  planetDescription: "Sao Th\u1ED5 l\xE0 h\xE0nh tinh th\u1EE9 s\xE1u (kho\u1EA3ng
+    1,4 t\u1EF7 km), n\u1ED5i ti\u1EBFng v\u1EDBi h\u1EC7 th\u1ED1ng v\xE0nh \u0111ai
+    b\u0103ng \u0111\xE1 tuy\u1EC7t \u0111\u1EB9p d\u1EC5 nh\u1EADn th\u1EA5y nh\u1EA5t.
+    N\xF3 l\xE0 h\xE0nh tinh l\u1EDBn th\u1EE9 hai v\xE0 l\xE0 m\u1ED9t kh\u1ED5ng
+    l\u1ED3 kh\xED. Tu\u1ED5i: Kho\u1EA3ng 4,5 t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
+--- !u!1 &555029065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 555029066}
+  - component: {fileID: 555029068}
+  - component: {fileID: 555029067}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &555029066
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555029065}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472119864}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &555029067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555029065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Nguy\u1EC7t Th\u1EF1c"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 281.75
+  m_fontSizeBase: 265
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 10000
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &555029068
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555029065}
+  m_CullTransparentMesh: 1
+--- !u!1 &566599063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 566599064}
+  m_Layer: 5
+  m_Name: Desc Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &566599064
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566599063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 957571647}
+  m_Father: {fileID: 124661609}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.75324416}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &621956180
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,7 +3478,7 @@ Transform:
   m_GameObject: {fileID: 621956180}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -369, y: 100, z: -98.60797}
+  m_LocalPosition: {x: -369, y: 100, z: -100}
   m_LocalScale: {x: 28, y: 28, z: 28}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3145,6 +3501,142 @@ MonoBehaviour:
   orbitSpeed: 6
   selfAxis: {x: 0, y: 1, z: 0}
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!1 &679788478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 679788479}
+  - component: {fileID: 679788481}
+  - component: {fileID: 679788480}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &679788479
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679788478}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2004536851}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &679788480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679788478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Nh\u1EADt Th\u1EF1c"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 343.6
+  m_fontSizeBase: 265
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 10000
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &679788481
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679788478}
+  m_CullTransparentMesh: 1
 --- !u!1 &793407001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3180,7 +3672,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793407003
 MonoBehaviour:
@@ -3202,7 +3694,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Uranus
+  m_text: "Sao Thi\xEAn V\u01B0\u01A1ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3229,7 +3721,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1345
+  m_fontSize: 574.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3891,7 +4383,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905041917}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -9466.943}
+  m_LocalPosition: {x: 0, y: 0, z: -10000}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4121,8 +4613,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: "Sao Thi\xEAn V\u01B0\u01A1ng"
-  planetDescription: thienvuong
+  planetName: "Sao Thi\xEAn V\u01B0\u01A1ng (Uranus)"
+  planetDescription: "Sao Thi\xEAn V\u01B0\u01A1ng l\xE0 h\xE0nh tinh th\u1EE9 b\u1EA3y
+    (kho\u1EA3ng 2,9 t\u1EF7 km), l\xE0 m\u1ED9t kh\u1ED5ng l\u1ED3 b\u0103ng c\xF3
+    m\xE0u xanh l\u1EE5c-lam do kh\xED Methane. \u0110i\u1EC3m k\u1EF3 l\u1EA1 nh\u1EA5t
+    l\xE0 tr\u1EE5c quay c\u1EE7a n\xF3 g\u1EA7n nh\u01B0 n\u1EB1m ngang. N\xF3 c\u0169ng
+    l\xE0 h\xE0nh tinh l\u1EA1nh nh\u1EA5t trong H\u1EC7 M\u1EB7t Tr\u1EDDi. Tu\u1ED5i:
+    Kho\u1EA3ng 4,5 t\u1EF7 n\u0103m"
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
 --- !u!1 &957571644
@@ -4195,9 +4692,9 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 10000
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4228,7 +4725,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -4884.5215, y: -2162.59, z: -4921.753, w: -4921.7773}
+  m_margin: {x: 58.145035, y: -18.522705, z: -22.87207, w: -9.423815}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4249,17 +4746,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957571644}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 124661609}
+  m_Father: {fileID: 566599064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: -400, y: -400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &987710694
 GameObject:
@@ -4419,8 +4916,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: "Sao H\u1EA3i V\u01B0\u01A1ng"
-  planetDescription: haivuong
+  planetName: "Sao H\u1EA3i V\u01B0\u01A1ng (Neptune)"
+  planetDescription: "Sao H\u1EA3i V\u01B0\u01A1ng l\xE0 h\xE0nh tinh th\u1EE9 t\xE1m
+    v\xE0 xa M\u1EB7t Tr\u1EDDi nh\u1EA5t (kho\u1EA3ng 4,5 t\u1EF7 km). \u0110\xE2y
+    c\u0169ng l\xE0 m\u1ED9t kh\u1ED5ng l\u1ED3 b\u0103ng m\xE0u xanh, n\u1ED5i ti\u1EBFng
+    v\u1EDBi t\u1ED1c \u0111\u1ED9 gi\xF3 m\u1EA1nh nh\u1EA5t \u0111\u01B0\u1EE3c
+    ghi nh\u1EADn (l\u1EDBn h\u01A1n 1500 d\u1EB7m/gi\u1EDD). Tu\u1ED5i: Kho\u1EA3ng
+    4,5 t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
 --- !u!1 &1009604328
@@ -4458,7 +4960,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009604330
 MonoBehaviour:
@@ -4480,7 +4982,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Earth
+  m_text: "Tr\xE1i \u0110\u1EA5t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4507,7 +5009,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1308.6
+  m_fontSize: 1012.9
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4594,7 +5096,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1039263172
 MonoBehaviour:
@@ -4616,7 +5118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mercury
+  m_text: "Sao Th\u1EE7y"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4643,7 +5145,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1327.1
+  m_fontSize: 840.65
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5125,7 +5627,7 @@ RectTransform:
   m_Father: {fileID: 394031425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.15220337}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0.7975682, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5270,7 +5772,7 @@ Transform:
   m_GameObject: {fileID: 1135440548}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1705, y: 100, z: -98.60797}
+  m_LocalPosition: {x: -1705, y: 100, z: -100}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5396,7 +5898,7 @@ Transform:
   m_GameObject: {fileID: 1136201763}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1168, y: 100, z: -98.60797}
+  m_LocalPosition: {x: -1168, y: 100, z: -100}
   m_LocalScale: {x: 250, y: 250, z: 250}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5455,7 +5957,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1182140932
 MonoBehaviour:
@@ -5477,7 +5979,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Moon
+  m_text: "M\u1EB7t Tr\u0103ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5504,7 +6006,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1370.7
+  m_fontSize: 801.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5556,6 +6058,127 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182140930}
   m_CullTransparentMesh: 1
+--- !u!1 &1187477756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1187477757}
+  - component: {fileID: 1187477759}
+  - component: {fileID: 1187477758}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1187477757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187477756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1403244456}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1187477758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187477756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 2
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &1187477759
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187477756}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2000000
+  m_Range: 4500
+  m_SpotAngle: 5
+  m_InnerSpotAngle: 5
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 2
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1 &1230568861
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,9 +6476,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetName: "M\u1EB7t Tr\u1EDDi"
-  planetDescription: mt
+  planetDescription: "M\u1EB7t Tr\u1EDDi l\xE0 m\u1ED9t ng\xF4i sao kh\u1ED5ng l\u1ED3,
+    kh\xF4ng ph\u1EA3i h\xE0nh tinh, l\xE0 trung t\xE2m c\u1EE7a H\u1EC7 M\u1EB7t
+    Tr\u1EDDi (c\xE1ch Tr\xE1i \u0110\u1EA5t 150 tri\u1EC7u km). N\xF3 t\u1EA1o ra
+    n\u0103ng l\u01B0\u1EE3ng qua ph\u1EA3n \u1EE9ng t\u1ED5ng h\u1EE3p h\u1EA1t
+    nh\xE2n, v\u1EDBi nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t kho\u1EA3ng 5.500
+    \u0110\u1ED9 C. N\xF3 l\xE0 m\u1ED9t kh\u1ED1i kh\xED n\xF3ng b\u1ECFng, ch\u1EE7
+    y\u1EBFu l\xE0 Hydrogen v\xE0 Helium. Tu\u1ED5i: Kho\u1EA3ng 4,6 t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
+--- !u!1 &1349229723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1349229724}
+  m_Layer: 5
+  m_Name: Planet Name Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1349229724
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349229723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 111450722}
+  m_Father: {fileID: 124661609}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.75324416}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.00048828125, y: -3766.131}
+  m_SizeDelta: {x: -9899.999, y: -2367.7412}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1385868534
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,13 +6909,13 @@ Transform:
   m_GameObject: {fileID: 1403244452}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1093, y: 100, z: -98.60797}
+  m_LocalPosition: {x: 1093, y: 100, z: -100}
   m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1684298089}
   - {fileID: 1887664917}
-  - {fileID: 1937034987}
+  - {fileID: 1187477757}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403610274
@@ -6288,9 +6953,9 @@ RectTransform:
   m_Father: {fileID: 394031425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.15220337}
+  m_AnchorMax: {x: 0.79787415, y: 0.15220337}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -200}
+  m_SizeDelta: {x: -200.00003, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403610276
 MonoBehaviour:
@@ -6524,7 +7189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499202675}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.14608304, y: -0, z: -0, w: 0.98927236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 70, y: 0, z: 0}
   m_LocalScale: {x: 14, y: 14, z: 14}
   m_ConstrainProportionsScale: 0
@@ -6780,8 +7445,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: "M\u1EB7t Tr\u0103ng"
-  planetDescription: mt
+  planetName: "M\u1EB7t Tr\u0103ng (Moon)"
+  planetDescription: "M\u1EB7t Tr\u0103ng l\xE0 v\u1EC7 tinh t\u1EF1 nhi\xEAn duy
+    nh\u1EA5t c\u1EE7a Tr\xE1i \u0110\u1EA5t (c\xE1ch kho\u1EA3ng 384.400 km). N\xF3
+    l\xE0 m\u1ED9t thi\xEAn th\u1EC3 \u0111\xE1, kh\xF4ng c\xF3 b\u1EA7u kh\xED quy\u1EC3n,
+    n\u1ED5i ti\u1EBFng v\u1EDBi b\u1EC1 m\u1EB7t \u0111\u1EA7y mi\u1EC7ng n\xFAi
+    l\u1EEDa. N\xF3 lu\xF4n ch\u1EC9 quay m\u1ED9t m\u1EB7t v\u1EC1 ph\xEDa Tr\xE1i
+    \u0110\u1EA5t v\xE0 g\xE2y ra hi\u1EC7n t\u01B0\u1EE3ng th\u1EE7y tri\u1EC1u.
+    Tu\u1ED5i: Kho\u1EA3ng 4,5 t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
 --- !u!1 &1552773926
@@ -6819,7 +7490,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1552773928
 MonoBehaviour:
@@ -6841,7 +7512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jupiter
+  m_text: "Sao M\u1ED9c"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6868,7 +7539,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1317.2
+  m_fontSize: 915.4
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7076,7 +7747,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626565406
 MonoBehaviour:
@@ -7098,7 +7769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Saturn
+  m_text: "Sao Th\u1ED5"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7125,7 +7796,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1317.2
+  m_fontSize: 943.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7944,8 +8615,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: "Tr\xE1i \u0110\u1EA5t"
-  planetDescription: hehehehehe
+  planetName: "Tr\xE1i \u0110\u1EA5t (Earth)"
+  planetDescription: "Tr\xE1i \u0110\u1EA5t l\xE0 h\xE0nh tinh th\u1EE9 ba (kho\u1EA3ng
+    150 tri\u1EC7u km), l\xE0 h\xE0nh tinh duy nh\u1EA5t \u0111\u01B0\u1EE3c bi\u1EBFt
+    \u0111\u1EBFn c\xF3 s\u1EF1 s\u1ED1ng v\xE0 n\u01B0\u1EDBc \u1EDF th\u1EC3 l\u1ECFng
+    tr\xEAn b\u1EC1 m\u1EB7t. B\u1EA7u kh\xED quy\u1EC3n gi\xE0u Nit\u01A1 v\xE0
+    Oxy, c\xF9ng v\u1EDBi t\u1EEB tr\u01B0\u1EDDng, t\u1EA1o \u0111i\u1EC1u ki\u1EC7n
+    cho s\u1EF1 s\u1ED1ng. Tu\u1ED5i: Kho\u1EA3ng 4,54 t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
 --- !u!1 &1799189595
@@ -8106,8 +8782,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: Sao Kim
-  planetDescription: saokim
+  planetName: Sao Kim (Venus)
+  planetDescription: "Sao Kim l\xE0 h\xE0nh tinh th\u1EE9 hai t\u1EEB M\u1EB7t Tr\u1EDDi
+    (kho\u1EA3ng 108 tri\u1EC7u km). N\xF3 l\xE0 h\xE0nh tinh n\xF3ng nh\u1EA5t H\u1EC7
+    M\u1EB7t Tr\u1EDDi (x\u1EA5p x\u1EC9 465 \u0110\u1ED9 C) do hi\u1EC7u \u1EE9ng
+    nh\xE0 k\xEDnh c\u1EF1c m\u1EA1nh t\u1EEB b\u1EA7u kh\xED quy\u1EC3n Carbon dioxide
+    d\xE0y \u0111\u1EB7c. Sao Kim quay ng\u01B0\u1EE3c chi\u1EC1u so v\u1EDBi h\u1EA7u
+    h\u1EBFt c\xE1c h\xE0nh tinh kh\xE1c. Tu\u1ED5i: Kho\u1EA3ng 4,6 t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
 --- !u!1 &1837714252
@@ -8145,7 +8826,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837714254
 MonoBehaviour:
@@ -8167,7 +8848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sun
+  m_text: "M\u1EB7t Tr\u1EDDi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8194,7 +8875,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1351.95
+  m_fontSize: 975.95
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8675,8 +9356,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: "Sao H\u1ECFa"
-  planetDescription: hoa
+  planetName: "Sao H\u1ECFa (Mars)"
+  planetDescription: "Sao H\u1ECFa l\xE0 h\xE0nh tinh th\u1EE9 t\u01B0 (kho\u1EA3ng
+    228 tri\u1EC7u km), \u0111\u01B0\u1EE3c g\u1ECDi l\xE0 \"H\xE0nh tinh \u0110\u1ECF\"
+    do b\u1EC1 m\u1EB7t ch\u1EE9a nhi\u1EC1u oxit s\u1EAFt (g\u1EC9 s\u1EAFt). H\xE0nh
+    tinh \u0111\xE1 n\xE0y c\xF3 ng\u1ECDn n\xFAi l\u1EEDa l\u1EDBn nh\u1EA5t H\u1EC7
+    M\u1EB7t Tr\u1EDDi (Olympus Mons) v\xE0 l\xE0 n\u01A1i c\xE1c nh\xE0 khoa h\u1ECDc
+    t\xECm ki\u1EBFm d\u1EA5u hi\u1EC7u c\u1EE7a s\u1EF1 s\u1ED1ng trong qu\xE1 kh\u1EE9.
+    Tu\u1ED5i: Kho\u1EA3ng 4,6 t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
 --- !u!1 &1911463364
@@ -8712,127 +9399,6 @@ Transform:
   - {fileID: 1666474562}
   m_Father: {fileID: 409024018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1937034986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1937034987}
-  - component: {fileID: 1937034989}
-  - component: {fileID: 1937034988}
-  m_Layer: 0
-  m_Name: Spot Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1937034987
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937034986}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1403244456}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &1937034988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937034986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 2
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
---- !u!108 &1937034989
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937034986}
-  m_Enabled: 1
-  serializedVersion: 11
-  m_Type: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2000000
-  m_Range: 4000
-  m_SpotAngle: 10
-  m_InnerSpotAngle: 5
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 2
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
 --- !u!1 &1946377879
 GameObject:
   m_ObjectHideFlags: 0
@@ -9263,10 +9829,149 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861af0c743f3ae4999b5f5994c2557c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetName: "Sao M\u1ED9c"
-  planetDescription: saomoc
+  planetName: "Sao M\u1ED9c (Jupiter)"
+  planetDescription: "Sao M\u1ED9c l\xE0 h\xE0nh tinh th\u1EE9 n\u0103m (kho\u1EA3ng
+    778 tri\u1EC7u km) v\xE0 l\xE0 h\xE0nh tinh l\u1EDBn nh\u1EA5t H\u1EC7 M\u1EB7t
+    Tr\u1EDDi. \u0110\xE2y l\xE0 m\u1ED9t kh\u1ED5ng l\u1ED3 kh\xED, ch\u1EE7 y\u1EBFu
+    l\xE0 Hydrogen v\xE0 Helium. \u0110\u1EB7c \u0111i\u1EC3m n\u1ED5i b\u1EADt nh\u1EA5t
+    l\xE0 V\u1EBFt \u0110\u1ECF L\u1EDBn, m\u1ED9t c\u01A1n b\xE3o kh\u1ED5ng l\u1ED3
+    \u0111\xE3 k\xE9o d\xE0i h\xE0ng tr\u0103m n\u0103m. Tu\u1ED5i: Kho\u1EA3ng 4,6
+    t\u1EF7 n\u0103m."
   infoManager: {fileID: 124661612}
   cameraChangeLogic: {fileID: 0}
+--- !u!1 &2004536850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2004536851}
+  - component: {fileID: 2004536854}
+  - component: {fileID: 2004536853}
+  - component: {fileID: 2004536852}
+  m_Layer: 5
+  m_Name: Solar Eclipse Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2004536851
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004536850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 679788479}
+  m_Father: {fileID: 2121539055}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -200, y: -200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2004536852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004536850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2004536853}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2094065372}
+        m_TargetAssemblyTypeName: EclipseScript, Assembly-CSharp
+        m_MethodName: SolarEclipse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2004536853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004536850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2004536854
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004536850}
+  m_CullTransparentMesh: 1
 --- !u!1 &2064133120
 GameObject:
   m_ObjectHideFlags: 0
@@ -9605,13 +10310,90 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112679881}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 52, y: 52, z: 52}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1296311488}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2121539054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121539055}
+  - component: {fileID: 2121539057}
+  - component: {fileID: 2121539056}
+  m_Layer: 5
+  m_Name: Eclipse Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2121539055
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121539054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2004536851}
+  - {fileID: 472119864}
+  m_Father: {fileID: 312320367}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.60200006}
+  m_AnchorMax: {x: 1, y: 0.79800004}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2121539056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121539054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2121539057
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121539054}
+  m_CullTransparentMesh: 1
 --- !u!1 &2123422926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9753,6 +10535,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 832575519}
+  - {fileID: 1043935912}
   - {fileID: 1403244456}
   - {fileID: 112268175}
   - {fileID: 218243588}
@@ -9769,7 +10552,6 @@ SceneRoots:
   - {fileID: 394031425}
   - {fileID: 2094065371}
   - {fileID: 188341046}
-  - {fileID: 1043935912}
   - {fileID: 207147542}
   - {fileID: 1230568864}
   - {fileID: 1649187404}

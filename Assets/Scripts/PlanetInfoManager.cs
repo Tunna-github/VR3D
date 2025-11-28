@@ -8,6 +8,11 @@ public class PlanetInfoManager : MonoBehaviour
     public TextMeshProUGUI descriptionText;
 
     // Hàm công khai để nhận dữ liệu từ PlanetButtonData
+
+    private void Start()
+    {
+        HidePlanetInfo();
+    }
     public void UpdatePlanetInfo(string name, string description)
     {
         if (planetNameText != null)
@@ -20,5 +25,15 @@ public class PlanetInfoManager : MonoBehaviour
             // Thay thế \n bằng ký tự xuống dòng thực tế
             descriptionText.text = description.Replace("\\n", "\n");
         }
+    }
+
+    public void ShowPlanetInfo()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void HidePlanetInfo()
+    {
+        gameObject.SetActive(false);
     }
 }

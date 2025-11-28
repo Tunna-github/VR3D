@@ -159,12 +159,13 @@ public class QuizManager : MonoBehaviour
     {
         if (quizPanel != null)
         {
+            ChangePOV.Instance.ChangeToOriginalPOV();
             quizPanel.SetActive(true);
             ShowRandomQuestion();
         }
     }
 
-    void HideQuizPanel()
+    public void HideQuizPanel()
     {
         if (quizPanel != null)
             quizPanel.SetActive(false);
