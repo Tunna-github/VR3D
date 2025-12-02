@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d6d9e3156c5fec64f9cee25c507c4b4e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Scripts/find.cs
+  uploadId: 444575

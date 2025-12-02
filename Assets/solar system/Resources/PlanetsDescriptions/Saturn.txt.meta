@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 093ca2feec01f634ebfe031e28902335
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Resources/PlanetsDescriptions/Saturn.txt
+  uploadId: 444575

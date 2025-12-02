@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2997b4f2bdce60c4395c1732f353045b
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Resources/PlanetsDescriptions/Jupiter.txt
+  uploadId: 444575

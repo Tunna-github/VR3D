@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eb173f3484487164bbc03963ec9cc57b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Materials/venus_atmosphere.mat
+  uploadId: 444575

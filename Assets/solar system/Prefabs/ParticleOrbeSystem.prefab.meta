@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8554f5b3d24ac8d4b86055e48767e984
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Prefabs/ParticleOrbeSystem.prefab
+  uploadId: 444575

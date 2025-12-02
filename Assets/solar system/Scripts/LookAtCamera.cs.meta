@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c258e6cec49fc794684fa4b1dbc7e57e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Scripts/LookAtCamera.cs
+  uploadId: 444575

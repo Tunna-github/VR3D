@@ -32,7 +32,7 @@ public class EclipseScript : MonoBehaviour
     private void Eclipse(float moonPosition) {
         StopRotationAndOrbital();
 
-        earthAndMoon.position = new Vector3(0, 100, -100);
+        earthAndMoon.position = new Vector3(0, 100*0.01f, -100*0.01f);
         earthAndMoon.rotation = Quaternion.identity;
 
         earth.localRotation = Quaternion.Euler(0, 0, 0);

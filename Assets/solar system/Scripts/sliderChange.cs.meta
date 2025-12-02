@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 37ed9f2ec85bceb4ba5785da733f6055
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Scripts/sliderChange.cs
+  uploadId: 444575

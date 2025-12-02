@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 30d6db00ef401544daa329954d9fcfd5
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136555
+  packageName: Animated Solar system pack
+  packageVersion: 2.0
+  assetPath: Assets/solar system/Resources/PlanetsDescriptions/Moon.txt
+  uploadId: 444575
