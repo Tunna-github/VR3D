@@ -31,12 +31,18 @@ public class QuizManager : MonoBehaviour
     public string jsonFileName = "quiz.json";
 
     [Header("VR Input")]
-    public InputActionProperty openQuizAction;
-    public InputActionProperty closeQuizAction;
+    public InputActionProperty openQuizAction;   
+    public InputActionProperty closeQuizAction;  
+
+    [Header("Quiz Settings")]
+    public int questionsPerSet = 5;              
 
     private QuizData quizData;
-
     private QuizQuestion currentQuestion;
+
+  
+    private List<QuizQuestion> currentQuestionSet = new List<QuizQuestion>();
+    private int currentQuestionIndex = 0;
 
     void Start()
     {
@@ -51,14 +57,26 @@ public class QuizManager : MonoBehaviour
 
     void Update()
     {
+        
         if (openQuizAction != null &&
             openQuizAction.action != null &&
             openQuizAction.action.WasPressedThisFrame())
         {
-            Debug.Log("Open Quiz");
-            ShowQuizPanel();
+            Debug.Log("Primary pressed");
+
+            if (quizPanel != null && !quizPanel.activeSelf)
+            {
+               
+                StartNewQuestionSetAndShowPanel();
+            }
+            else
+            {
+               
+                ShowNextQuestionInSet();
+            }
         }
 
+       
         if (closeQuizAction != null &&
             closeQuizAction.action != null &&
             closeQuizAction.action.WasPressedThisFrame())
@@ -81,40 +99,106 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    public void ShowRandomQuestion()
+ 
+    void StartNewQuestionSetAndShowPanel()
     {
-        if (quizData != null && quizData.questions.Count > 0)
+        if (quizData == null || quizData.questions == null || quizData.questions.Count == 0)
         {
-            int randomIndex = Random.Range(0, quizData.questions.Count);
-            currentQuestion = quizData.questions[randomIndex];
+            Debug.LogWarning("No quiz data loaded!");
+            return;
+        }
 
-            if (questionText != null)
-                questionText.text = currentQuestion.question;
+      
+        currentQuestionSet = GetRandomQuestionSet(questionsPerSet);
+        currentQuestionIndex = 0;
 
-            for (int i = 0; i < answerButtons.Length; i++)
+        if (quizPanel != null)
+        {
+            ChangePOV.Instance.ChangeToOriginalPOV();
+            quizPanel.SetActive(true);
+        }
+
+        ShowQuestion(currentQuestionSet[currentQuestionIndex]);
+    }
+
+    
+    List<QuizQuestion> GetRandomQuestionSet(int count)
+    {
+        List<QuizQuestion> pool = new List<QuizQuestion>(quizData.questions);
+        List<QuizQuestion> result = new List<QuizQuestion>();
+
+        int n = Mathf.Min(count, pool.Count);
+
+        for (int i = 0; i < n; i++)
+        {
+            int randomIndex = Random.Range(0, pool.Count);
+            result.Add(pool[randomIndex]);
+            pool.RemoveAt(randomIndex); 
+        }
+
+        return result;
+    }
+
+
+    void ShowNextQuestionInSet()
+    {
+        if (currentQuestionSet == null || currentQuestionSet.Count == 0)
+        {
+            Debug.Log("No current question set, creating a new one.");
+            StartNewQuestionSetAndShowPanel();
+            return;
+        }
+
+        
+        if (currentQuestionIndex < currentQuestionSet.Count - 1)
+        {
+            currentQuestionIndex++;
+            ShowQuestion(currentQuestionSet[currentQuestionIndex]);
+        }
+        else
+        {
+            
+            Debug.Log("Finished all questions in current set. Closing quiz panel.");
+            HideQuizPanel();
+            currentQuestionSet.Clear();      
+        }
+    }
+
+
+    void ShowQuestion(QuizQuestion question)
+    {
+        if (question == null) return;
+
+        currentQuestion = question;
+
+        if (questionText != null)
+            questionText.text = currentQuestion.question;
+
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            Button btn = answerButtons[i];
+
+            if (i < currentQuestion.answers.Length)
             {
-                Button btn = answerButtons[i];
-
-                if (i < currentQuestion.answers.Length)
-                {
-                    TMP_Text btnText = btn.GetComponentInChildren<TMP_Text>();
+                TMP_Text btnText = btn.GetComponentInChildren<TMP_Text>();
+                if (btnText != null)
                     btnText.text = currentQuestion.answers[i];
-                    btn.gameObject.SetActive(true);
 
-                    btn.onClick.RemoveAllListeners();
-                    btn.onClick.AddListener(() => CheckAnswer(btn));
-                }
-                else
-                {
-                    btn.gameObject.SetActive(false);
-                }
+                btn.gameObject.SetActive(true);
 
-                Image img = btn.GetComponent<Image>();
-                if (img != null)
-                    img.color = Color.white;
-
-                btn.interactable = true;
+                btn.onClick.RemoveAllListeners();
+                btn.onClick.AddListener(() => CheckAnswer(btn));
             }
+            else
+            {
+                btn.gameObject.SetActive(false);
+            }
+
+            Image img = btn.GetComponent<Image>();
+            if (img != null)
+                img.color = Color.white;
+
+            btn.interactable = true;
         }
     }
 
@@ -154,15 +238,11 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    
     [ContextMenu("Show Quiz Panel")]
     public void ShowQuizPanel()
     {
-        if (quizPanel != null)
-        {
-            ChangePOV.Instance.ChangeToOriginalPOV();
-            quizPanel.SetActive(true);
-            ShowRandomQuestion();
-        }
+        StartNewQuestionSetAndShowPanel();
     }
 
     public void HideQuizPanel()

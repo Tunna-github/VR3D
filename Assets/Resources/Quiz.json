@@ -139,6 +139,156 @@
       "question": "Trái Đất thuộc loại hành tinh:",
       "answers": [ "Khí khổng lồ", "Đá – rắn", "Lạnh băng", "Lửa nóng" ],
       "correctAnswer": "Đá – rắn"
+    },
+    {
+      "question": "Ngày và đêm xảy ra do điều gì?",
+      "answers": [ "Do Trái Đất quay quanh Mặt Trời", "Do Trái Đất quay quanh trục", "Do Mặt Trăng chắn ánh sáng Mặt Trời", "Do Trái Đất ngừng quay" ],
+      "correctAnswer": "Do Trái Đất quay quanh trục"
+    },
+    {
+      "question": "Hành tinh nào có vành đai nổi bật nhất?",
+      "answers": [ "Sao Kim", "Sao Thổ", "Sao Hỏa", "Sao Hải Vương" ],
+      "correctAnswer": "Sao Thổ"
+    },
+    {
+      "question": "Hành tinh nào có nhiệt độ bề mặt nóng nhất trong Hệ Mặt Trời?",
+      "answers": [ "Sao Hỏa", "Sao Kim", "Sao Thủy", "Trái Đất" ],
+      "correctAnswer": "Sao Kim"
+    },
+    {
+      "question": "Hành tinh nào có 1 vệ tinh tự nhiên là Mặt Trăng?",
+      "answers": [ "Sao Hải Vương", "Trái Đất", "Sao Mộc", "Sao Thủy" ],
+      "correctAnswer": "Trái Đất"
+    },
+    {
+      "question": "Hiện tượng thủy triều chủ yếu do lực hấp dẫn của:",
+      "answers": [ "Sao Kim", "Mặt Trăng", "Sao Hỏa", "Sao Thổ" ],
+      "correctAnswer": "Mặt Trăng"
+    },
+    {
+      "question": "Năm nhuận có bao nhiêu ngày?",
+      "answers": [ "364", "365", "366", "367" ],
+      "correctAnswer": "366"
+    },
+    {
+      "question": "Hành tinh nào có ngày dài hơn năm?",
+      "answers": [ "Sao Hỏa", "Sao Kim", "Sao Thủy", "Sao Mộc" ],
+      "correctAnswer": "Sao Kim"
+    },
+    {
+      "question": "Hành tinh nào được gọi là “hành tinh khí khổng lồ”?",
+      "answers": [ "Sao Kim", "Sao Mộc", "Sao Hỏa", "Sao Thủy" ],
+      "correctAnswer": "Sao Mộc"
+    },
+    {
+      "question": "Bão lớn nhất Hệ Mặt Trời – “Vết Đỏ Lớn” – nằm trên hành tinh nào?",
+      "answers": [ "Sao Thổ", "Sao Mộc", "Sao Hải Vương", "Sao Thiên Vương" ],
+      "correctAnswer": "Sao Mộc"
+    },
+    {
+      "question": "Mặt Trăng mất bao lâu để quay quanh Trái Đất?",
+      "answers": [ "1 ngày", "7 ngày", "14 ngày", "27 ngày" ],
+      "correctAnswer": "27 ngày"
+    },
+    {
+      "question": "Mùa nào xảy ra khi bán cầu Bắc nghiêng về phía Mặt Trời?",
+      "answers": [ "Mùa đông", "Mùa hè", "Mùa thu", "Mùa xuân" ],
+      "correctAnswer": "Mùa hè"
+    },
+    {
+      "question": "Sao Thủy và Sao Kim thuộc loại hành tinh gì?",
+      "answers": [ "Khí khổng lồ", "Hành tinh băng giá", "Hành tinh đất đá", "Hành tinh khí nóng" ],
+      "correctAnswer": "Hành tinh đất đá"
+    },
+    {
+      "question": "Phần tối nhất của bóng Trái Đất trong nguyệt thực gọi là:",
+      "answers": [ "Bán bóng", "Toàn bóng", "Hoàng đạo", "Cổ bóng" ],
+      "correctAnswer": "Toàn bóng"
+    },
+    {
+      "question": "Hành tinh nào có trục nghiêng nhiều nhất (97,8°)?",
+      "answers": [ "Sao Thiên Vương", "Sao Hải Vương", "Sao Thổ", "Sao Mộc" ],
+      "correctAnswer": "Sao Thiên Vương"
+    },
+    {
+      "question": "Sao Diêm Vương hiện được xếp vào loại thiên thể nào?",
+      "answers": [ "Hành tinh", "Tiểu hành tinh", "Hành tinh lùn", "Sao băng" ],
+      "correctAnswer": "Hành tinh lùn"
+    },
+    {
+      "question": "Hành tinh nào có nhiều vệ tinh nhất?",
+      "answers": [ "Sao Kim", "Sao Mộc", "Sao Thổ", "Sao Hải Vương" ],
+      "correctAnswer": "Sao Thổ"
+    },
+    {
+      "question": "Mặt Trăng không tự phát sáng mà sáng lên do:",
+      "answers": [ "Phản xạ ánh sáng Mặt Trời", "Nhiệt độ cao của lõi", "Khí phát quang", "Dòng điện từ Trái Đất" ],
+      "correctAnswer": "Phản xạ ánh sáng Mặt Trời"
+    },
+    {
+      "question": "Ngày dài nhất trong năm ở bán cầu Bắc là thời điểm:",
+      "answers": [ "Xuân phân", "Hạ chí", "Thu phân", "Đông chí" ],
+      "correctAnswer": "Hạ chí"
+    },
+    {
+      "question": "Lớp khí quyển bảo vệ Trái Đất khỏi tia cực tím là:",
+      "answers": [ "Tầng đối lưu", "Tầng ozone", "Tầng điện ly", "Tầng bình lưu" ],
+      "correctAnswer": "Tầng ozone"
+    },
+    {
+      "question": "Dải sáng mà ta nhìn thấy trên bầu trời đêm gọi là:",
+      "answers": [ "Dải Thiên Hà", "Dải Ngân Hà", "Dải Mặt Trời", "Dải Ánh Sáng" ],
+      "correctAnswer": "Dải Ngân Hà"
+    },
+    {
+      "question": "Hiện tượng sao băng thực chất là:",
+      "answers": [ "Ngôi sao rơi xuống", "Thiên thạch cháy khi vào khí quyển", "Vụ nổ Mặt Trời", "Sao trời va chạm nhau" ],
+      "correctAnswer": "Thiên thạch cháy khi vào khí quyển"
+    },
+    {
+      "question": "Ngày nào có độ dài ngày và đêm bằng nhau?",
+      "answers": [ "Hạ chí", "Đông chí", "Xuân phân và Thu phân", "Mùa mưa" ],
+      "correctAnswer": "Xuân phân và Thu phân"
+    },
+    {
+      "question": "Hành tinh xa Mặt Trời nhất trong danh sách chính là:",
+      "answers": [ "Sao Hải Vương", "Sao Thổ", "Sao Mộc", "Sao Hỏa" ],
+      "correctAnswer": "Sao Hải Vương"
+    },
+    {
+      "question": "Hành tinh nào có bề mặt nhiều núi lửa nhất?",
+      "answers": [ "Sao Kim", "Sao Hỏa", "Sao Thủy", "Io (vệ tinh của Sao Mộc)" ],
+      "correctAnswer": "Io (vệ tinh của Sao Mộc)"
+    },
+    {
+      "question": "Hành tinh nào được gọi là “anh em sinh đôi” của Trái Đất vì kích thước gần giống?",
+      "answers": [ "Sao Thủy", "Sao Kim", "Sao Hỏa", "Sao Hải Vương" ],
+      "correctAnswer": "Sao Kim"
+    },
+    {
+      "question": "Trong nhật thực hình khuyên, Mặt Trăng trông nhỏ hơn vì:",
+      "answers": [ "Mặt Trăng gần Trái Đất hơn", "Mặt Trăng xa Trái Đất hơn", "Mặt Trời nhỏ đi", "Do bóng Trái Đất" ],
+      "correctAnswer": "Mặt Trăng xa Trái Đất hơn"
+    },
+    {
+      "question": "Đơn vị thiên văn (AU) là khoảng cách giữa:",
+      "answers": [ "Mặt Trời và Sao Thủy", "Trái Đất và Mặt Trăng", "Trái Đất và Mặt Trời", "Sao Mộc và Sao Thổ" ],
+      "correctAnswer": "Trái Đất và Mặt Trời"
+    },
+    {
+      "question": "Hiện tượng cực quang xảy ra do:",
+      "answers": [ "Động đất", "Tác động của gió Mặt Trời lên khí quyển", "Mặt Trăng phát sáng", "Bão từ trường Trái Đất biến mất" ],
+      "correctAnswer": "Tác động của gió Mặt Trời lên khí quyển"
+    },
+    {
+      "question": "Hành tinh nào có ngày ngắn nhất (quay nhanh nhất)?",
+      "answers": [ "Sao Kim", "Sao Mộc", "Sao Thổ", "Sao Hải Vương" ],
+      "correctAnswer": "Sao Mộc"
+    },
+    {
+      "question": "Mặt Trời chủ yếu được cấu tạo từ khí gì?",
+      "answers": [ "Oxy và Nitơ", "Sắt và Magie", "Hydro và Helium", "Carbon và Neon" ],
+      "correctAnswer": "Hydro và Helium"
     }
   ]
 }
